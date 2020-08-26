@@ -881,11 +881,41 @@ h3 {
 .read-more-btn {
   text-align: center;
   background-color: #bf2603;
-  padding: 10px;
+  padding: 0 25px;
 }
 
 .locations-section p {
   max-width: 600px;
+}
+
+/* Host A Party Section */
+.host-section {
+  background-color: #111010;
+  width: 100%;
+  padding: 200px 0;
+  height: 100%;
+}
+
+.host-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.host-content p {
+  max-width: 700px;
+  text-align: center;
+}
+
+.host-content h3 {
+  color: #ff8327;
 }
 
 /* ========================== */

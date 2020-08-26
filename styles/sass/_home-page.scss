@@ -143,9 +143,33 @@ h3 {
 .read-more-btn {
   text-align: center;
   background-color: $button-primary-color;
-  padding: 10px;
+  padding: 0 25px;
 }
 
 .locations-section p {
   max-width: 600px;
+}
+
+
+/* Host A Party Section */
+.host-section {
+    background-color: $primary-background-color;
+  width: 100%;
+  padding: 200px 0;
+  height: 100%;
+}
+
+.host-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.host-content p {
+  max-width: 700px;
+  text-align: center
+}
+
+.host-content h3 {
+  color: $secondary-text-color
 }
