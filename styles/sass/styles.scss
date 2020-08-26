@@ -623,24 +623,16 @@ a {
   /* for accesability */
   padding: 20px;
 }
+
+.wrapper {
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
 /* ========================== */
 
 
 /* IMPORTS */
-@import "header";
+@import "home-page";
 
 /* ========================== */
-
-
-/* More Info Section */
-.more-info {
-  display: flex;
-  justify-content: space-between;
-  background-color: $primary-background-color;
-}
-
-.content-left {
-  display: flex;
-  flex-direction: column;
-  width: 50%
-}

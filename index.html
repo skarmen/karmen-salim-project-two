@@ -14,57 +14,86 @@
 <body>
   <!-- Header -->
   <header class="header-content">
-    <nav class="top-nav">
-      <ul class="main-menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <!-- TO DO - ask for Bar One Logo Image -->
-        <li><a href="#about">Bar-One</a></li>
-        <li><a href="./blog.html">Blog</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="wrapper">
+      <nav class="top-nav">
+        <ul class="main-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <!-- TO DO - ask for Bar One Logo Image -->
+          <li><a href="#about">Bar-One</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
       <div class="banner-content">
         <h1>Bar-One</h1>
         <h2>Place to be</h2>
       </div>
+    </div>
+    <div class="box-image">
+      <img src="./bar-assets/header-box.jpg" alt="Wine glasses hanging from a wine glass hanger at the bar.">
+    </div>
   </header>
 
   <!-- Main -->
   <main>
     <!-- More Info Section -->
     <section class="more-info">
-      <div class="content-left">
-        <div class="new-space-content">
-          <i class="fas fa-home"></i>
-          <h3>New Space</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, laborum!</p>
+      <div class="wrapper more-info">
+        <div class="content-left">
+          <div class="new-space-content">
+            <i class="fas fa-home round-icon"></i>
+            <h3 class="icon-heading">New Space</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, laborum! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, itaque!</p>
+          </div>
+          <div class="blog-content">
+            <i class="fas fa-file round-icon"></i>
+            <h3 class="icon-heading">Blog</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, natus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, adipisci.
+            </p>
+          </div>
         </div>
-        <div class="blog-content">
-          <i class="fas fa-file"></i>
-          <h3>Blog</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, natus.
-          </p>
+        <div class="content-right">
+          <div class="community-content">
+            <i class="fas fa-users round-icon"></i>
+            <h3 class="icon-heading">Community</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, eum?</p>
+          </div>
+          <div class="contact-content">
+            <i class="fas fa-phone round-icon"></i>
+            <h3 class="icon-heading"> Get in Touch</h3>
+            <span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, reprehenderit!</p>
+          </div>
         </div>
       </div>
-      <div class="content-right">
-        <div class="community-content">
-          <i class="fas fa-users"></i>
-          <h3>Community</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, itaque.</p>
-        </div>
-        <div class="contact-content">
-          <i class="fas fa-phone"></i>
-          <h3>Get in Touch</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, earum.</p>
-        </div>
-      </div>
-
     </section>
 
     <!-- Locations & Plan Section -->
-    <section>
-      <div></div>
+    <section class="locations-section">
+      <div class="wrapper locations-section">
+        <div class="content-left">
+          <div class="left-image">
+            <img src="./bar-assets/left-image.jpg" alt="Beautifully lit bar at night.">
+          </div>
+          <h3>New Locations</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore praesentium facere repellat porro sint perspiciatis iure exercitationem consequatur recusandae laudantium?</p>
+          <div class="read-more">
+            <a href="#" class="read-more-btn">Read More</a>
+          </div>
+        </div>
+        <div class="content-right">
+          <h3>Plan ahead</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci ex enim similique in eum at excepturi deleniti maxime alias eveniet.</p>
+          <div class="read-more">
+            <a href="#" class="read-more-btn">Read More</a>
+          </div>
+            <div class="left-image">
+              <img src="./bar-assets/right-image.jpg" alt="Bar interior during the day. There is a couple sitting on the bar.">
+            </div>
+        </div>
+
+      </div>
     </section>
 
     <!-- Host Party Section -->

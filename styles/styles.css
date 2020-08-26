@@ -680,8 +680,15 @@ a {
   padding: 20px;
 }
 
+.wrapper {
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
 /* ========================== */
 /* IMPORTS */
+/*  Header */
 .headerContent {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -739,16 +746,26 @@ header h2 {
   text-align: center;
 }
 
-/* ========================== */
 /* More Info Section */
 .more-info {
+  background-color: #111010;
+  width: 100%;
+  padding: 100px 0;
+}
+
+.wrapper.more-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-color: #111010;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.more-info p {
+  max-width: 600px;
 }
 
 .content-left {
@@ -759,5 +776,79 @@ header h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 50%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
+
+.content-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+/* from https://markheath.net/post/font-awesome-circle-background */
+.fas.round-icon {
+  background: #bf2603;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  vertical-align: middle;
+  padding: 10px;
+}
+
+.icon-heading {
+  display: inline-block;
+  font-family: "Chathura", "Times New Roman", Times, sans-serif;
+  font-size: 68px;
+  line-height: 58px;
+  letter-spacing: 2.2px;
+  font-weight: bold;
+}
+
+/*  Locations Section */
+.locations-section {
+  background-color: #220303;
+  width: 100%;
+  padding: 100px 0;
+}
+
+.wrapper.locations-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+h3 {
+  font-family: "Chathura", "Times New Roman", Times, sans-serif;
+  font-size: 68px;
+  line-height: 58px;
+  letter-spacing: 2.2px;
+  font-weight: bold;
+}
+
+.read-more-btn {
+  text-align: center;
+  background-color: #bf2603;
+  padding: 10px;
+}
+
+.locations-section p {
+  max-width: 600px;
+}
+
+/* ========================== */
