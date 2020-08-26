@@ -964,4 +964,16 @@ h3 {
           justify-content: space-evenly;
 }
 
+/* Footer */
+footer {
+  background-color: #111010;
+  text-align: center;
+  padding: 5px;
+}
+
+.juno-footer-link {
+  padding: 0;
+  /* remove padding from the a tag, doesn't work with the desing */
+}
+
 /* ========================== */

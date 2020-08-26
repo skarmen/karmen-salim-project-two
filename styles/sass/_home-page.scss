@@ -220,3 +220,13 @@ h3 {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+
+/* Footer */
+footer {
+  background-color: $primary-background-color;
+  text-align: center;
+  padding: 5px;
+}
+.juno-footer-link {
+  padding: 0; /* remove padding from the a tag, doesn't work with the desing */
+}
