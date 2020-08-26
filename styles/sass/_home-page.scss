@@ -18,7 +18,7 @@ header {
 .box-image {
   position: absolute;
   z-index: -1;
-  bottom: -150px;
+  bottom: -100px;
   right: 0;
   width: 50%;
 
@@ -26,6 +26,12 @@ header {
 nav {
   display: flex;
   justify-content: center;
+}
+
+.top-nav-logo {
+  font-family: 'Tulpen One',"Times New Roman", Times, cursive, sans-serif;
+  font-size: 46px;
+  margin: 20px;
 }
 
 .main-menu {
@@ -69,6 +75,7 @@ header h2 {
 
 .more-info p {
   max-width: 600px;
+  margin-top: 0;
 }
 
 .content-left {
@@ -85,19 +92,19 @@ header h2 {
 
 /* from https://markheath.net/post/font-awesome-circle-background */
 .fas.round-icon {
+
   background: $button-primary-color;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   text-align: center;
   line-height: 50px;
-  vertical-align: middle;
   padding: 10px;
+  margin-right: 15px;
 }
 
 .icon-heading {
-  display: inline-block;
-  @include main-font (68px, 2.2px, bold)
+  @include main-font (68px, 2.2px, bold);
 }
 
 
@@ -116,7 +123,8 @@ header h2 {
 
 
 h3 {
-  @include main-font (68px, 2.2px, bold)
+  @include main-font (68px, 2.2px, bold);
+  vertical-align: middle;
 }
 
 .read-more-btn {
@@ -131,7 +139,8 @@ h3 {
 
 .banner-content {
 display: flex;
+flex-direction: column;
 justify-content: flex-end;
 height: 90%;
-flex-direction: column;
+
 }
