@@ -944,4 +944,24 @@ h3 {
   color: #ff8327;
 }
 
+/* Gallery Section */
+.gallery-section {
+  background-color: #220303;
+  width: 100%;
+  padding: 100px 0;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
 /* ========================== */

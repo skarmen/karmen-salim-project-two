@@ -207,3 +207,16 @@ h3 {
 .events-content h3 {
   color: $secondary-text-color
 }
+
+
+/* Gallery Section */
+.gallery-section {
+      background-color: $secondary-background-color;
+  width: 100%;
+  padding: 100px 0;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
