@@ -1,8 +1,8 @@
 /*  Header */
-.headerContent {
-	display: flex;
-	flex-direction: column;
-	height: 100%; /* Takes a height because the container is 100vh*/
+.header-content {
+	// display: flex;
+	// flex-direction: column;
+	// height: 100%; /* Takes a height because the container is 100vh*/
 }
 
 header {
@@ -11,8 +11,18 @@ header {
   background-repeat: no-repeat;
   padding-top: 30px;
   height: 100vh;
+  position: relative;
+  z-index: 1;
 }
 
+.box-image {
+  position: absolute;
+  z-index: -1;
+  bottom: -150px;
+  right: 0;
+  width: 50%;
+
+}
 nav {
   display: flex;
   justify-content: center;
@@ -30,13 +40,19 @@ h1 {
   text-align: center;
   letter-spacing: 2.4px;
   color: $secondary-text-color;
+  line-height: 117px;
+  margin: 0;
 }
 
 header h2 {
   color: $primary-text-color;
-  @include main-font(83.2px, 94.7px, 2.6px, bold);
+  @include main-font(83.2px, 2.6px, bold);
   text-align: center;
+  transform: translate(-80px);
+  margin-top: 30px;
+  line-height: 94.7px;
 }
+
 
 /* More Info Section */
 .more-info {
@@ -81,7 +97,7 @@ header h2 {
 
 .icon-heading {
   display: inline-block;
-  @include main-font (68px, 58px, 2.2px, bold)
+  @include main-font (68px, 2.2px, bold)
 }
 
 
@@ -100,7 +116,7 @@ header h2 {
 
 
 h3 {
-  @include main-font (68px, 58px, 2.2px, bold)
+  @include main-font (68px, 2.2px, bold)
 }
 
 .read-more-btn {
@@ -111,4 +127,11 @@ h3 {
 
 .locations-section p {
   max-width: 600px;
+}
+
+.banner-content {
+display: flex;
+justify-content: flex-end;
+height: 90%;
+flex-direction: column;
 }

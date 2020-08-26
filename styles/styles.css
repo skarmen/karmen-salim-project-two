@@ -661,9 +661,8 @@ html {
 body {
   font-family: "Chathura", "Times New Roman", Times, sans-serif;
   font-size: 39px;
-  line-height: 30px;
   letter-spacing: 1.9px;
-  font-weight: normal;
+  font-weight: 400;
   color: #fff;
 }
 
@@ -687,26 +686,28 @@ a {
 }
 
 /* ========================== */
-/* IMPORTS */
-/*  Header */
-.headerContent {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+header .wrapper {
   height: 100%;
-  /* Takes a height because the container is 100vh*/
 }
 
+/* IMPORTS */
+/*  Header */
 header {
   background-image: url(../bar-assets/home-image-1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 30px;
   height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.box-image {
+  position: absolute;
+  z-index: -1;
+  bottom: -150px;
+  right: 0;
+  width: 50%;
 }
 
 nav {
@@ -734,16 +735,21 @@ h1 {
   text-align: center;
   letter-spacing: 2.4px;
   color: #ff8327;
+  line-height: 117px;
+  margin: 0;
 }
 
 header h2 {
   color: #fff;
   font-family: "Chathura", "Times New Roman", Times, sans-serif;
   font-size: 83.2px;
-  line-height: 94.7px;
   letter-spacing: 2.6px;
   font-weight: bold;
   text-align: center;
+  -webkit-transform: translate(-80px);
+          transform: translate(-80px);
+  margin-top: 30px;
+  line-height: 94.7px;
 }
 
 /* More Info Section */
@@ -810,7 +816,6 @@ header h2 {
   display: inline-block;
   font-family: "Chathura", "Times New Roman", Times, sans-serif;
   font-size: 68px;
-  line-height: 58px;
   letter-spacing: 2.2px;
   font-weight: bold;
 }
@@ -836,7 +841,6 @@ header h2 {
 h3 {
   font-family: "Chathura", "Times New Roman", Times, sans-serif;
   font-size: 68px;
-  line-height: 58px;
   letter-spacing: 2.2px;
   font-weight: bold;
 }
@@ -849,6 +853,20 @@ h3 {
 
 .locations-section p {
   max-width: 600px;
+}
+
+.banner-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 90%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 /* ========================== */

@@ -585,13 +585,12 @@ $button-primary-color: #bf2603;
 ========================== */
 @mixin main-font(
   $font-size,
-  $line-height,
+  // $line-height,
   $letter-spacing,
-  $font-weight: normal
+  $font-weight: 400,
 ) {
   font-family: "Chathura", "Times New Roman", Times, sans-serif;
   font-size: $font-size;
-  line-height: $line-height;
   letter-spacing: $letter-spacing;
   font-weight: $font-weight;
 }
@@ -606,7 +605,7 @@ html {
 }
 
 body {
-  @include main-font(39px, 30px, 1.9px); // convert pixels to rem
+  @include main-font(39px, 1.9px); // convert pixels to rem
   color: $primary-text-color;
 ;
 }
@@ -631,6 +630,9 @@ a {
 }
 /* ========================== */
 
+header .wrapper {
+  height: 100%;
+}
 
 /* IMPORTS */
 @import "home-page";
