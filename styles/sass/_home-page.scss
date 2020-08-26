@@ -173,3 +173,37 @@ h3 {
 .host-content h3 {
   color: $secondary-text-color
 }
+
+/* Events Section */
+.events-section {
+    background-color: $primary-background-color;
+  width: 100%;
+  padding: 200px 0;
+  height: 100%;
+  display: inline-block;
+}
+
+.events-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.events-img {
+  // display: flex;
+  // flex-direction: column;
+  // width: 40%;
+}
+.events-content {
+  // display: flex;
+  // align-items: center;
+  // width: 60%;
+}
+
+.events-content p {
+  max-width: 700px;
+
+}
+
+.events-content h3 {
+  color: $secondary-text-color
+}
