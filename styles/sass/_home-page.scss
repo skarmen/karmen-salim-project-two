@@ -1,8 +1,9 @@
 /*  Header */
-.header-content {
-	// display: flex;
-	// flex-direction: column;
-	// height: 100%; /* Takes a height because the container is 100vh*/
+.banner-content {
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+height: 90%;
 }
 
 header {
@@ -60,6 +61,7 @@ header h2 {
 }
 
 
+
 /* More Info Section */
 .more-info {
   background-color: $primary-background-color;
@@ -92,7 +94,6 @@ header h2 {
 
 /* from https://markheath.net/post/font-awesome-circle-background */
 .fas.round-icon {
-
   background: $button-primary-color;
   width: 50px;
   height: 50px;
@@ -108,13 +109,26 @@ header h2 {
 }
 
 
+
 /*  Locations Section */
 .locations-section {
   background-color: $secondary-background-color;
   width: 100%;
   padding: 100px 0;
+  position: relative;
 }
 
+.left-image {
+  position: absolute;
+  top: -150px;
+  left: -80px;
+}
+
+.right-image {
+  position: absolute;
+  bottom: -150px;
+  right: -80px;
+}
 .wrapper.locations-section {
   display: flex;
   justify-content: center;
@@ -124,7 +138,6 @@ header h2 {
 
 h3 {
   @include main-font (68px, 2.2px, bold);
-  vertical-align: middle;
 }
 
 .read-more-btn {
@@ -135,12 +148,4 @@ h3 {
 
 .locations-section p {
   max-width: 600px;
-}
-
-.banner-content {
-display: flex;
-flex-direction: column;
-justify-content: flex-end;
-height: 90%;
-
 }
