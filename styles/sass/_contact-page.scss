@@ -40,6 +40,7 @@
   font-family: 'Tulpen One',"Times New Roman", Times, cursive, sans-serif;;
   font-size: 39px; // convert pixels to rem
   letter-spacing: 1.9px;
+  padding: 5px 0px;
 }
 
 form {
@@ -99,7 +100,9 @@ input[type="email"] {
 
 
 .message textarea {
+  box-sizing: border-box;
   border: 1px solid white;
+  width: 100%;
   margin: 30px 0;
   padding-top: 40px;
 }
