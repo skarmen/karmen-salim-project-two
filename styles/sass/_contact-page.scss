@@ -1,4 +1,4 @@
-/* Contact Header */
+/* Contact Page - Header */
  .contact-page-header {
    background-image: url(../bar-assets/contact-header-1.jpg);
   background-size: cover;
@@ -17,6 +17,8 @@
   transform: translateX(-300px) // is this correct?
 }
 
+
+/* Contact Page - Contact Info */
 .contact-section {
   background-color: $primary-background-color;
   width: 100%;
@@ -24,25 +26,21 @@
   // position: relative;
 }
 
-.contact-icons ul li {
+.contact-row {
+  display: flex;
+}
+
+.contact-info {
+  flex: 1;
+}
+.contact-icons  li {
   display: inline-block;
 }
 
-// textarea {
-//   height: 200px;
-// }
 
-.submit-button {
-  background-color: $button-primary-color;
-  color: $primary-text-color;
-  border: none;
-  width: 100%;
-  font-family: 'Tulpen One',"Times New Roman", Times, cursive, sans-serif;;
-  font-size: 39px; // convert pixels to rem
-  letter-spacing: 1.9px;
-  padding: 5px 0px;
-}
 
+
+/* Contact Page - Contact Form */
 form {
   background-color: $secondary-background-color;
   padding: 40px;
@@ -50,14 +48,16 @@ form {
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  box-shadow: 22px 22px 0px -5px $secondary-text-color;
+  box-shadow: 25px 25px 0px -5px $secondary-text-color;
   // width: 100%;
 }
 
 .form {
   display: flex;
   flex-direction: column;
+  flex: 1;
   width: 100%;
+
 
 }
 
@@ -100,7 +100,6 @@ input[type="email"] {
   margin-left: 30px;
 }
 
-
 .message textarea {
   box-sizing: border-box;
   border: 1px solid white;
@@ -108,4 +107,15 @@ input[type="email"] {
   height: 300px;
   margin: 30px 0;
   padding-top: 40px;
+}
+
+.submit-button {
+  background-color: $button-primary-color;
+  color: $primary-text-color;
+  border: none;
+  width: 100%;
+  font-family: 'Tulpen One',"Times New Roman", Times, cursive, sans-serif;;
+  font-size: 39px; // convert pixels to rem
+  letter-spacing: 1.9px;
+  padding: 5px 0px;
 }

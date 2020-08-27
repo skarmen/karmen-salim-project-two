@@ -986,7 +986,7 @@ footer {
   /* remove padding from the a tag, doesn't work with the desing */
 }
 
-/* Contact Header */
+/* Contact Page - Header */
 .contact-page-header {
   background-image: url(../bar-assets/contact-header-1.jpg);
   background-size: cover;
@@ -1011,27 +1011,30 @@ footer {
           transform: translateX(-300px);
 }
 
+/* Contact Page - Contact Info */
 .contact-section {
   background-color: #111010;
   width: 100%;
   padding: 100px 0;
 }
 
-.contact-icons ul li {
+.contact-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.contact-icons li {
   display: inline-block;
 }
 
-.submit-button {
-  background-color: #bf2603;
-  color: #fff;
-  border: none;
-  width: 100%;
-  font-family: 'Tulpen One',"Times New Roman", Times, cursive, sans-serif;
-  font-size: 39px;
-  letter-spacing: 1.9px;
-  padding: 5px 0px;
-}
-
+/* Contact Page - Contact Form */
 form {
   background-color: #220303;
   padding: 40px;
@@ -1046,8 +1049,8 @@ form {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
-  -webkit-box-shadow: 22px 22px 0px -5px #ff8327;
-          box-shadow: 22px 22px 0px -5px #ff8327;
+  -webkit-box-shadow: 25px 25px 0px -5px #ff8327;
+          box-shadow: 25px 25px 0px -5px #ff8327;
 }
 
 .form {
@@ -1058,6 +1061,9 @@ form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   width: 100%;
 }
 
@@ -1121,6 +1127,17 @@ input[type="email"] {
   height: 300px;
   margin: 30px 0;
   padding-top: 40px;
+}
+
+.submit-button {
+  background-color: #bf2603;
+  color: #fff;
+  border: none;
+  width: 100%;
+  font-family: 'Tulpen One',"Times New Roman", Times, cursive, sans-serif;
+  font-size: 39px;
+  letter-spacing: 1.9px;
+  padding: 5px 0px;
 }
 
 /* ========================== */
