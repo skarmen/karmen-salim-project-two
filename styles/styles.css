@@ -741,6 +741,10 @@ nav {
   margin: 20px;
 }
 
+.active-navlink {
+  color: #ff8327;
+}
+
 .main-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -994,7 +998,7 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 30px;
-  height: 100vh;
+  height: 90vh;
 }
 
 .contact-page-heading {
@@ -1015,11 +1019,16 @@ footer {
   top: -50px;
 }
 
+.active-navlink {
+  color: #ff8327;
+}
+
 /* Contact Page - Contact Info */
 .contact-section {
   background-color: #111010;
   width: 100%;
   padding: 100px 0;
+  height: 500px;
 }
 
 .contact-row {

@@ -4,7 +4,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 30px;
-  height: 100vh;
+  height: 90vh;
   // position: relative;
   // z-index: 1;
 }
@@ -19,12 +19,16 @@
   top: -50px;
 }
 
+.active-navlink {
+  color: $secondary-text-color;
+}
 
 /* Contact Page - Contact Info */
 .contact-section {
   background-color: $primary-background-color;
   width: 100%;
   padding: 100px 0;
+  height: 500px;
   // position: relative;
 }
 
