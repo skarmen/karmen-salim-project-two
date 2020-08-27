@@ -188,6 +188,10 @@ h3 {
   color: $secondary-text-color
 }
 
+/* Img Section */
+.img-section img {
+  width: 100%;
+}
 /* Events Section */
 .events-section {
     background-color: $primary-background-color;
@@ -239,7 +243,7 @@ h3 {
 footer {
   background-color: $footer-background-color;
   text-align: center;
-  padding: 2px;
+  padding: 15px;
 }
 .juno-footer-link {
   padding: 0; /* remove padding from the a tag, doesn't work with the desing */

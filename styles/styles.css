@@ -934,6 +934,11 @@ h3 {
   color: #ff8327;
 }
 
+/* Img Section */
+.img-section img {
+  width: 100%;
+}
+
 /* Events Section */
 .events-section {
   background-color: #111010;
@@ -984,7 +989,7 @@ h3 {
 footer {
   background-color: #2b2727;
   text-align: center;
-  padding: 2px;
+  padding: 15px;
 }
 
 .juno-footer-link {
