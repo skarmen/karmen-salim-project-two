@@ -1,5 +1,5 @@
 /* Blog Page - Header */
- .contact-page-header {
+ .blog-page-header {
    background-image: url(../bar-assets/blog-header-1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -14,11 +14,14 @@
   flex-direction: column;
   justify-content: flex-end;
   height: 70%;
-  transform: translateX(-300px); // is this correct?
   position: relative;
   top: -50px;
 }
 
+.blog-page-heading h2 {
+  position: relative;
+  left: -460px;
+}
 .active-navlink {
   color: $secondary-text-color;
 }

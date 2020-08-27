@@ -772,8 +772,8 @@ header h2 {
   letter-spacing: 2.6px;
   font-weight: bold;
   text-align: center;
-  -webkit-transform: translate(-80px);
-          transform: translate(-80px);
+  position: relative;
+  left: -80px;
   margin-top: 30px;
   line-height: 94.7px;
 }
@@ -1018,10 +1018,13 @@ footer {
       -ms-flex-pack: end;
           justify-content: flex-end;
   height: 70%;
-  -webkit-transform: translateX(-300px);
-          transform: translateX(-300px);
   position: relative;
   top: -50px;
+}
+
+.contact-page-heading h2 {
+  position: relative;
+  left: -420px;
 }
 
 .active-navlink {
@@ -1171,7 +1174,7 @@ input[type="email"] {
 }
 
 /* Blog Page - Header */
-.contact-page-header {
+.blog-page-header {
   background-image: url(../bar-assets/blog-header-1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -1191,10 +1194,13 @@ input[type="email"] {
       -ms-flex-pack: end;
           justify-content: flex-end;
   height: 70%;
-  -webkit-transform: translateX(-300px);
-          transform: translateX(-300px);
   position: relative;
   top: -50px;
+}
+
+.blog-page-heading h2 {
+  position: relative;
+  left: -460px;
 }
 
 .active-navlink {

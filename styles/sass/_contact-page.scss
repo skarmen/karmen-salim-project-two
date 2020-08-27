@@ -14,9 +14,13 @@
   flex-direction: column;
   justify-content: flex-end;
   height: 70%;
-  transform: translateX(-300px); // is this correct?
   position: relative;
   top: -50px;
+}
+
+.contact-page-heading h2 {
+  position: relative;
+  left: -420px;
 }
 
 .active-navlink {

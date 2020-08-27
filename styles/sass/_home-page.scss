@@ -58,7 +58,8 @@ header h2 {
   color: $primary-text-color;
   @include main-font(83.2px, 2.6px, bold);
   text-align: center;
-  transform: translate(-80px);
+  position: relative;
+  left: -80px;
   margin-top: 30px;
   line-height: 94.7px;
 }
