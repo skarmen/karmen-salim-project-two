@@ -639,7 +639,8 @@ header .wrapper {
 }
 
 /* IMPORTS */
+// @use should be used instead @import, official note from SASS's website
 @import "home-page";
 @import "contact-page";
-
+@import "blog-page";
 /* ========================== */

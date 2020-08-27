@@ -1,0 +1,24 @@
+/* Blog Page - Header */
+ .contact-page-header {
+   background-image: url(../bar-assets/blog-header-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 30px;
+  height: 90vh;
+  // position: relative;
+  // z-index: 1;
+}
+
+.blog-page-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 70%;
+  transform: translateX(-300px); // is this correct?
+  position: relative;
+  top: -50px;
+}
+
+.active-navlink {
+  color: $secondary-text-color;
+}
