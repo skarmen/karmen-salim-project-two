@@ -1,0 +1,76 @@
+/* Contact Header */
+ .contact-page-header {
+   background-image: url(../bar-assets/contact-header-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 30px;
+  height: 100vh;
+  // position: relative;
+  // z-index: 1;
+}
+
+.contact-page-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 70%;
+  transform: translateX(-300px) // is this correct?
+}
+
+.contact-section {
+  background-color: $primary-background-color;
+  width: 100%;
+  padding: 100px 0;
+  // position: relative;
+}
+
+.contact-icons ul li {
+  display: inline-block;
+}
+
+// textarea {
+//   height: 200px;
+// }
+
+.submit-button {
+  background-color: $button-primary-color;
+}
+
+form {
+  background-color: $secondary-background-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.input-form {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 20p
+}
+
+.message {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.input > input {
+ padding: 10px 20px;
+}
+
+.msg > textarea {
+  width: 100%;
+  padding: 10px 20px;
+  height: 200px;
+}
+
+
+input, textarea {
+  // background: transparent;
+  border: none;
+  outline: none;
+}
