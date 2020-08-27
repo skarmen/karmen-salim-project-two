@@ -648,6 +648,8 @@ Dark Red
 #220303
 rgb(34,3,3)
 
+Footer Color - not provided on the style guide
+Suggested color: #2b2727
 */
 /* MIXINS
 ========================== */
@@ -976,9 +978,9 @@ h3 {
 
 /* Footer */
 footer {
-  background-color: #111010;
+  background-color: #2b2727;
   text-align: center;
-  padding: 5px;
+  padding: 2px;
 }
 
 .juno-footer-link {
