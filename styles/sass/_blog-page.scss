@@ -29,10 +29,24 @@
   background-color: $primary-background-color;
   width: 100%;
   padding: 100px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Blog Page - Sidebar layout */
+.blog-sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 
-
+/* Blog Page - Blog Post Layout*/
+.blog-post {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+}
 
 
 
