@@ -1250,6 +1250,12 @@ input[type="email"] {
           flex: 1;
 }
 
+.sidebar-content {
+  background: #220303;
+  width: 400px;
+  padding: 80px;
+}
+
 /* Blog Page - Blog Post Layout*/
 .blog-post {
   display: -webkit-box;

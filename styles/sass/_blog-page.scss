@@ -51,6 +51,16 @@
   flex: 1;
 }
 
+.sidebar-content {
+  background: $secondary-background-color;
+  width: 400px;
+  padding: 80px;
+}
+
+// .recent-posts-list  {
+//   list-style: none;
+// }
+
 
 /* Blog Page - Blog Post Layout*/
 .blog-post {
