@@ -1,3 +1,14 @@
+// TO DO
+// 1. Fix width of input fields on the form
+// 2. BLog Post column Border left and bottom on the section
+// 3. Check colors
+// 4. Check forn size and font family
+// 5. Responsive Design
+// 6. Clean up HTML & CSS
+
+
+
+
 /* Blog Page - Header */
  .blog-page-header {
    background-image: url(../bar-assets/blog-header-1.jpg);
@@ -20,7 +31,7 @@
   position: relative;
   left: -460px;
 }
-.active-navlink {
+.active-navlink, .secondary-color {
   color: $secondary-text-color;
 }
 
@@ -59,6 +70,22 @@
   width: 100%;
 }
 
+.blog-content {
+}
+
+/* Blog Page - Comments Section */
+
+.comments-row-1, .comments-row-2 {
+  display: flex;
+  max-width: 100%;
+}
+
+.comments-img-1, .comments-img-2 {
+  width: 300px;
+  position: relative;
+  top: 50px;
+  margin-right: 40px;
+}
 
 /* Blog Page - Submit Comment */
 form.blog-page-form  {
@@ -69,19 +96,15 @@ form.blog-page-form  {
   justify-content: center;
   margin: 0 auto;
   width: 100%;
+  padding: 0;
 }
 
-.blog-page-form {
-  display: flex;
-  flex-direction: column;
-  flex: 2;
-  width: 100%;
-  // position: relative;
-  // z-index: 1;
-  // top: -250px;
-
-
-}
+// .blog-page-form {
+//   display: flex;
+//   flex-direction: column;
+//   flex: 2;
+//   width: 100%;
+// }
 
 .row-1 {
   flex: 1;
@@ -95,7 +118,6 @@ form.blog-page-form  {
 
 .row-2 {
   flex-grow: 1;
-
 }
 
 .row-3 {
