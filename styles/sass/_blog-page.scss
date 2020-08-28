@@ -79,7 +79,16 @@
   width: 100%;
 }
 
+.border-content {
+  border-left: 8px solid $secondary-text-color;
+  border-bottom: 8px solid $secondary-text-color;
+  padding-left: 12px;
+}
+
 .blog-content {
+  // Need to know if this is correct
+  margin-top: -180px;
+  padding: 80px;
 }
 
 /* Blog Page - Comments Section */

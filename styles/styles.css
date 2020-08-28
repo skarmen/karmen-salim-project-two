@@ -1266,6 +1266,17 @@ input[type="email"] {
   width: 100%;
 }
 
+.border-content {
+  border-left: 8px solid #ff8327;
+  border-bottom: 8px solid #ff8327;
+  padding-left: 12px;
+}
+
+.blog-content {
+  margin-top: -180px;
+  padding: 80px;
+}
+
 /* Blog Page - Comments Section */
 .comments-row-1, .comments-row-2 {
   display: -webkit-box;
