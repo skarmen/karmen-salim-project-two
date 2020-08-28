@@ -67,6 +67,8 @@ header h2 {
 
 
 /* More Info Section */
+// TO DO
+// 1. Need to have the icons within the wrapper rn they are bleeding out
 .more-info {
   background-color: $primary-background-color;
   width: 100%;
@@ -76,6 +78,7 @@ header h2 {
 .wrapper.more-info {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 
@@ -84,19 +87,14 @@ header h2 {
   margin-top: 0;
 }
 
-.content-left {
+.content-row-1, .content-row-2 {
   display: flex;
-  flex-direction: column;
   flex: 1;
+  justify-content: space-around;
+  flex-wrap: wrap;
 
 }
 
-.content-right {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-
-}
 
 /* from https://markheath.net/post/font-awesome-circle-background */
 .fas.round-icon {
@@ -107,7 +105,10 @@ header h2 {
   text-align: center;
   line-height: 50px;
   padding: 10px;
-  margin-right: 15px;
+  // margin-right: 15px;
+  position: relative;
+  top: 50px;
+  right: 80px;
 }
 
 .icon-heading {

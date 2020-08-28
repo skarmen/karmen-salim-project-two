@@ -54,10 +54,17 @@
   background: $secondary-background-color;
   width: 400px;
   padding: 80px;
+  margin: 0;
+  // WTF? - what to do with the img? 
+  display: flex;
+  flex-direction: column;
+  justify-content: inherit;
+  position: relative;
+  right: -50px;
 }
 
 .sidebar-content p {
-  margin-bottom: 0;
+  margin: 0 auto;
 }
 
 .sidebar-content a {
