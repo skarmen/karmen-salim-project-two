@@ -566,20 +566,6 @@ template {
           box-sizing: inherit;
 }
 
-.visuallyHidden:not(:focus):not(:active) {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0);
-  overflow: hidden;
-}
-
 .sr-only {
   position: absolute;
   width: 1px;
@@ -1017,14 +1003,13 @@ footer {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  height: 70%;
+  height: 65%;
   position: relative;
-  top: -50px;
 }
 
 .contact-page-heading h2 {
   position: relative;
-  left: -420px;
+  left: -500px;
 }
 
 .active-navlink {
@@ -1209,9 +1194,8 @@ input[type="email"] {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  height: 70%;
+  height: 65%;
   position: relative;
-  top: -50px;
 }
 
 .blog-page-heading h2 {
