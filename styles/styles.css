@@ -1,3 +1,4 @@
+@charset "UTF-8";
 a,
 abbr,
 acronym,
@@ -1240,6 +1241,24 @@ input[type="email"] {
   padding: 80px;
 }
 
+.sidebar-content p {
+  margin-bottom: 0;
+}
+
+.sidebar-content a {
+  padding-left: 0;
+}
+
+.posts-heading {
+  margin-top: 39px;
+}
+
+.recent-posts-list li:before {
+  content: "· ";
+  vertical-align: middle;
+  color: #bf2603;
+}
+
 /* Blog Page - Blog Post Layout*/
 .blog-post {
   display: -webkit-box;
@@ -1278,6 +1297,10 @@ input[type="email"] {
 }
 
 /* Blog Page - Comments Section */
+.comments-section-col {
+  margin: 100px auto;
+}
+
 .comments-row-1, .comments-row-2 {
   display: -webkit-box;
   display: -ms-flexbox;
