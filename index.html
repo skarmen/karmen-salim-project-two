@@ -10,23 +10,34 @@
   <!-- CSS Styles -->
   <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+
 </head>
 <body id="home">
 
   <!-- Header -->
   <header class="header-content">
     <div class="wrapper">
-      <!-- Navigation -->
-      <nav class="top-nav">
-        <ul class="main-menu">
-          <li><a href="./index.html" class="active-navlink">Home</a></li>
-          <li><a href="./index.html">About</a></li>
-          <li><a href="./index.html" class="top-nav-logo">Bar-One</a></li>
-          <li><a href="./blog.html">Blog</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <!-- Navigation Ends -->
+      <div class="collapsible-menu">
+        <input type="checkbox" id="menu">
+        <label for="menu">Menu</label>
+        <div class="menu-content">
+          <!-- Navigation -->
+          <nav class="top-nav">
+            <ul class="main-menu">
+              <li><a href="./index.html" class="active-navlink">Home</a></li>
+              <li><a href="./index.html">About</a></li>
+              <li><a href="./index.html" class="top-nav-logo">Bar-One</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <!-- Navigation Ends -->
+        </div>
+        <!-- Menu Content Ends -->
+      </div>
+      <!-- Collapsible Menu Ends -->
+
+
       <!-- Banner Heading -->
       <div class="banner-content">
         <h1>Bar-One</h1>

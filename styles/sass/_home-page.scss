@@ -24,10 +24,11 @@ header {
   width: 50%;
 
 }
-nav {
+nav ul {
   display: flex;
   justify-content: center;
 }
+
 
 .top-nav-logo {
   font-family: 'Tulpen One',"Times New Roman", Times, cursive, sans-serif;
@@ -275,12 +276,7 @@ footer {
   padding: 0; /* remove padding from the a tag, doesn't work with the desing */
 }
 
-@media (max-width: 768px) {
-  .main-menu {
-    justify-content: space-around;
-    flex-flow: column wrap;
-  }
-}
+
 
 
 
@@ -318,4 +314,46 @@ h3 {
 .locations-row-1-img img {
   position: relative;
   left: -100px;
+}
+
+
+// Hamburger Menu
+
+
+@media (max-width: 768px) {
+  .main-menu {
+    justify-content: space-around;
+    flex-flow: column wrap;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+
+}
+
+.collapsible-menu label {
+  display: block;
+  cursor: pointer;
+  background: url(../bar-assets/menu.png) no-repeat left center;
+  padding: 10px 0 10px 50px;
+}
+input#menu {
+  display: none;
+}
+
+input:checked +label {
+  background-image: url(../bar-assets/close.png);
+}
+
+.menu-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 0 0 50px;
+}
+/* Toggle Effect */
+input:checked ~ label {
+    background-image: url(../bar-assets/close.png);
+}
+input:checked ~ .menu-content {
+    max-height: 100%;
 }

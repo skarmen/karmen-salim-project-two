@@ -713,7 +713,7 @@ header {
   width: 50%;
 }
 
-nav {
+nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -994,17 +994,6 @@ footer {
   /* remove padding from the a tag, doesn't work with the desing */
 }
 
-@media (max-width: 768px) {
-  .main-menu {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
-  }
-}
-
 /* styles.css | file:///Users/karmen/juno/projects/bar-one-psd-conversion/styles/styles.css */
 h3 {
   display: inline;
@@ -1037,6 +1026,53 @@ h3 {
 .locations-row-1-img img {
   position: relative;
   left: -100px;
+}
+
+@media (max-width: 768px) {
+  .main-menu {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+  nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.collapsible-menu label {
+  display: block;
+  cursor: pointer;
+  background: url(../bar-assets/menu.png) no-repeat left center;
+  padding: 10px 0 10px 50px;
+}
+
+input#menu {
+  display: none;
+}
+
+input:checked + label {
+  background-image: url(../bar-assets/close.png);
+}
+
+.menu-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 0 0 50px;
+}
+
+/* Toggle Effect */
+input:checked ~ label {
+  background-image: url(../bar-assets/close.png);
+}
+
+input:checked ~ .menu-content {
+  max-height: 100%;
 }
 
 /* Contact Page - Header */
