@@ -41,6 +41,7 @@ nav {
 .main-menu {
 	display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   width: 100%;
 }
 
@@ -273,4 +274,11 @@ footer {
 }
 .juno-footer-link {
   padding: 0; /* remove padding from the a tag, doesn't work with the desing */
+}
+
+@media (max-width: 768px) {
+  .main-menu {
+    justify-content: space-around;
+    flex-flow: column wrap;
+  }
 }

@@ -52,8 +52,8 @@
 
 .sidebar-content {
   background: $secondary-background-color;
-  width: 400px;
-  padding: 80px;
+  width: 350px;
+  padding: 40px;
   margin: 0;
   // WTF? - what to do with the img?
   display: flex;
@@ -69,6 +69,17 @@
 
 .sidebar-content a {
   padding-left: 0;
+}
+
+.sidebar-img {
+  position: relative;
+  left: -120px;
+  top: -40px;
+}
+
+.sidebar-img img {
+  width: 130% !important;
+  max-width: 130% !important;
 }
 
 .posts-heading {

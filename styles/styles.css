@@ -739,6 +739,8 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
 }
 
@@ -990,6 +992,17 @@ footer {
 .juno-footer-link {
   padding: 0;
   /* remove padding from the a tag, doesn't work with the desing */
+}
+
+@media (max-width: 768px) {
+  .main-menu {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
 }
 
 /* Contact Page - Header */
@@ -1245,8 +1258,8 @@ input[type="email"] {
 
 .sidebar-content {
   background: #220303;
-  width: 400px;
-  padding: 80px;
+  width: 350px;
+  padding: 40px;
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1268,6 +1281,17 @@ input[type="email"] {
 
 .sidebar-content a {
   padding-left: 0;
+}
+
+.sidebar-img {
+  position: relative;
+  left: -120px;
+  top: -40px;
+}
+
+.sidebar-img img {
+  width: 130% !important;
+  max-width: 130% !important;
 }
 
 .posts-heading {
