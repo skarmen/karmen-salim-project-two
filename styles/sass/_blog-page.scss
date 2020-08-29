@@ -90,9 +90,7 @@
 .posts-heading {
   margin-top: 39px;
 }
-// .recent-posts-list  {
-//   list-style: none;
-// }
+
 
 .recent-posts-list li:before {
   content:"· ";
@@ -148,7 +146,7 @@
   margin-right: 40px;
 }
 
-/* Blog Page - Submit Comment */
+/* Blog Page - Contact Form */
 form.blog-page-form  {
   background-color: transparent;
   padding: 40px;
@@ -159,13 +157,6 @@ form.blog-page-form  {
   width: 100%;
   padding: 0;
 }
-
-// .blog-page-form {
-//   display: flex;
-//   flex-direction: column;
-//   flex: 2;
-//   width: 100%;
-// }
 
 .row-1 {
   flex: 1;
@@ -185,7 +176,6 @@ form.blog-page-form  {
   flex: 1;
 }
 
-
 input, textarea {
   background: transparent;
   border: none;
@@ -198,7 +188,6 @@ input::placeholder, textarea::placeholder {
   color: white;
 }
 
-
 .blog-page-input-form input {
   padding-bottom: 10px;
 
@@ -208,17 +197,15 @@ input[type="email"], input[type="text"] {
   width: 100%
 }
 
-
-div.input {
+div.blog-input {
   border-bottom: 1px solid $secondary-text-color;
   display: flex;
   flex-wrap: wrap;
 }
 
-div.input:nth-child(2) {
+div.blog-input:nth-child(2) {
   margin-left: 30px;
 }
-
 
 .blog-page-message textarea {
   box-sizing: border-box;
@@ -229,11 +216,9 @@ div.input:nth-child(2) {
   padding-top: 40px;
 }
 
-
 .blog-page-message {
   display: flex;
 }
-
 
 .submit-button {
   background-color: $button-primary-color;
@@ -244,4 +229,54 @@ div.input:nth-child(2) {
   font-size: 39px; // convert pixels to rem
   letter-spacing: 1.9px;
   padding: 5px 0px;
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1024px) {
+  .blog-page-main-section {
+    flex-direction: column;
+  }
+
+  // select wrapper div (sidebar-content)
+  .blog-sidebar div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+  }
+
+  .sidebar-img {
+    display: none; // design decision on mobile/ smaller screens
+  }
+  // .sidebar-img {
+  //   display: flex;
+  //   justify-content: center;
+  //   top: 0; // to center
+  //   position: initial; // to center
+  //   sidebar-img {
+  //   align-content: center;
+  //   flex-wrap: wrap;
+  //   flex-direction: column;
+  // }
+
+  .sidebar-content {
+    right: 0; // to center the div
+    top: 0; // remove img spacer height
+  }
+
+  .blog-sidebar {
+    padding-bottom: 100px;
+  }
+
+  .image-spacer {
+    display: none;
+  }
+
+}
+
+
+@media only screen and (max-width: 480px) {
+  .sidebar-content {
+    padding: 25px;
+  }
 }

@@ -1387,7 +1387,7 @@ input::placeholder, textarea::placeholder {
   margin-right: 40px;
 }
 
-/* Blog Page - Submit Comment */
+/* Blog Page - Contact Form */
 form.blog-page-form {
   background-color: transparent;
   padding: 40px;
@@ -1472,7 +1472,7 @@ input[type="email"], input[type="text"] {
   width: 100%;
 }
 
-div.input {
+div.blog-input {
   border-bottom: 1px solid #ff8327;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1481,7 +1481,7 @@ div.input {
       flex-wrap: wrap;
 }
 
-div.input:nth-child(2) {
+div.blog-input:nth-child(2) {
   margin-left: 30px;
 }
 
@@ -1510,6 +1510,43 @@ div.input:nth-child(2) {
   font-size: 39px;
   letter-spacing: 1.9px;
   padding: 5px 0px;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1024px) {
+  .blog-page-main-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog-sidebar div:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sidebar-img {
+    display: none;
+  }
+  .sidebar-content {
+    right: 0;
+    top: 0;
+  }
+  .blog-sidebar {
+    padding-bottom: 100px;
+  }
+  .image-spacer {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .sidebar-content {
+    padding: 25px;
+  }
 }
 
 /* ========================== */
