@@ -817,9 +817,6 @@ header h2 {
   text-align: center;
   line-height: 50px;
   padding: 10px;
-  position: relative;
-  top: 50px;
-  right: 80px;
 }
 
 .icon-heading {
@@ -1005,6 +1002,40 @@ footer {
   }
 }
 
+/* styles.css | file:///Users/karmen/juno/projects/bar-one-psd-conversion/styles/styles.css */
+h3 {
+  display: inline;
+  margin-left: 0px;
+}
+
+.more-info p {
+  /* max-width: 600px; */
+  max-width: 570px;
+  margin-left: 70px;
+}
+
+.fas.round-icon {
+  /* width: 50px; */
+  /* height: 50px; */
+  /* line-height: 50px; */
+  /* top: 50px; */
+  /* right: 80px; */
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 80%;
+}
+
+.wrap {
+  position: relative;
+  left: 100px;
+}
+
+.locations-row-1-img img {
+  position: relative;
+  left: -100px;
+}
+
 /* Contact Page - Header */
 .contact-page-header {
   background-image: url(../bar-assets/contact-header-1.jpg);
@@ -1169,10 +1200,6 @@ input::placeholder, textarea::placeholder {
 .contact-page-input-form input {
   border-bottom: 1px solid white;
   padding-bottom: 10px;
-}
-
-input[type="email"] {
-  margin-left: 30px;
 }
 
 .contact-page-message textarea {
@@ -1438,11 +1465,23 @@ input::placeholder, textarea::placeholder {
 }
 
 .blog-page-input-form input {
-  border-bottom: 1px solid #ff8327;
   padding-bottom: 10px;
 }
 
-input[type="email"] {
+input[type="email"], input[type="text"] {
+  width: 100%;
+}
+
+div.input {
+  border-bottom: 1px solid #ff8327;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+div.input:nth-child(2) {
   margin-left: 30px;
 }
 
@@ -1454,6 +1493,12 @@ input[type="email"] {
   height: 300px;
   margin: 50px 0;
   padding-top: 40px;
+}
+
+.blog-page-message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .submit-button {

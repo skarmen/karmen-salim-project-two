@@ -193,15 +193,27 @@ input::placeholder, textarea::placeholder {
   color: white;
 }
 
+
 .blog-page-input-form input {
-  border-bottom: 1px solid $secondary-text-color;
   padding-bottom: 10px;
 
 }
 
-input[type="email"] {
+input[type="email"], input[type="text"] {
+  width: 100%
+}
+
+
+div.input {
+  border-bottom: 1px solid $secondary-text-color;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.input:nth-child(2) {
   margin-left: 30px;
 }
+
 
 .blog-page-message textarea {
   box-sizing: border-box;
@@ -211,6 +223,12 @@ input[type="email"] {
   margin: 50px 0;
   padding-top: 40px;
 }
+
+
+.blog-page-message {
+  display: flex;
+}
+
 
 .submit-button {
   background-color: $button-primary-color;

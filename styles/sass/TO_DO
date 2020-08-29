@@ -1,0 +1,43 @@
+// Header - all pages
+1. Make it responsive
+2. Clean Up html & Css
+3. Convert px to rems
+4. Check for repetitive code
+5. Check indentation
+6. Improve naming
+7. Add effects ( hover, trsnaform etc)
+8. Remove any classes from the wrapper 
+
+// HOME PAGE
+// Navbar
+// 1. Nav Bar - make hamburger m,enu on all pages for all devices below 768px
+
+/* More Info Section */
+// 1. Need to have the icons within the wrapper rn they are bleeding out
+// 2. Check responsivness
+
+// Locations Section
+1. How to aligned the images &  text content as per design?
+2. Make it responsive
+
+/* Events Section */
+// 1. Align content vertically in the middle
+// 2. Check responsivness
+
+// Gallery Section
+1. Check responsivness
+
+// Img Section
+1. Is this responsivness ok?
+
+
+// BLOG PAGE - ok
+
+1. Contact Form - smth is wrong with the form input fields/ bleeding out from the body - how to fix?
+2. Extra padding on blog post content - bleeding  out from the body. Requires extra padding to follow the design
+3. Sidebar section - how to postion the layout. Trouble figuring out the image?
+4. Responsivness for both sections
+
+
+// CONTACT PAGE
+1.  Form Input fields - same issues
