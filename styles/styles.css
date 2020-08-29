@@ -1056,20 +1056,27 @@ h3 {
   left: 100px;
 }
 
+/* MEDIA QUERIES
+=================================== */
 @media (max-width: 768px) {
-  .main-menu {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
+  #home .banner-content {
+    height: 70%;
   }
-  nav ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .box-image {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  #home .banner-content {
+    height: 50%;
+  }
+  #home .banner-content h1 {
+    font-size: 16rem;
+  }
+  #home .banner-content h2 {
+    font-size: 8rem;
+    left: 0;
   }
 }
 
