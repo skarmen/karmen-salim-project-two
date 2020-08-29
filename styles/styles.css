@@ -1083,6 +1083,9 @@ h3 {
     font-size: 8rem;
     left: 0;
   }
+  .host-content {
+    text-align: center;
+  }
 }
 
 /* Contact Page - Header */

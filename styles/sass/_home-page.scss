@@ -355,7 +355,7 @@ h3 {
     display: none;
   }
 
-  // Events Section
+  // Home Page - Events Section
   .events-image {
     margin-bottom: 50px;
   }
@@ -367,6 +367,7 @@ h3 {
 
 @media (max-width: 480px) {
 
+  // Home Page - Header
   #home .banner-content {
     height: 50%
   }
@@ -378,5 +379,10 @@ h3 {
   #home .banner-content h2 {
     font-size: 8rem;
     left: 0;
+  }
+
+  // home Page - Host Section
+  .host-content {
+    text-align: center;
   }
 }
