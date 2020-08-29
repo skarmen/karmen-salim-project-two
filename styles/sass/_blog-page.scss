@@ -1,6 +1,6 @@
 // TO DO
-// 1. Fix width of input fields on the form
-// 2. BLog Post column Border left and bottom on the section
+// 1. Fix width of input fields on the form - DONE
+// 2. BLog Post column Border left and bottom on the section - DONE
 // 3. Check colors
 // 4. Check forn size and font family
 // 5. Responsive Design
@@ -82,10 +82,6 @@
   top: -20px;
 }
 
-// .sidebar-img img {
-//   width: 100%;
-//   max-width: 50%;
-// }
 
 .posts-heading {
   margin-top: 39px;
@@ -94,7 +90,6 @@
 
 .recent-posts-list li:before {
   content:"· ";
-  // font-size: 24px;
   vertical-align: middle;
   color: $button-primary-color;
 }
@@ -226,15 +221,17 @@ div.blog-input:nth-child(2) {
   border: none;
   width: 100%;
   font-family: 'Tulpen One',"Times New Roman", Times, cursive, sans-serif;;
-  font-size: 39px; // convert pixels to rem
+  font-size: 3.9rem;
   letter-spacing: 1.9px;
   padding: 5px 0px;
 }
 
 
-/* MEDIA QUERIES */
-
+/* MEDIA QUERIES
+==========================================  */
 @media only screen and (max-width: 1024px) {
+  /* BLOG PAGE
+  ========================================== */
   .blog-page-main-section {
     flex-direction: column;
   }
@@ -246,35 +243,31 @@ div.blog-input:nth-child(2) {
   }
 
   .sidebar-img {
-    display: none; // design decision on mobile/ smaller screens
+    display: none; // design decision on mobile
   }
-  // .sidebar-img {
-  //   display: flex;
-  //   justify-content: center;
-  //   top: 0; // to center
-  //   position: initial; // to center
-  //   sidebar-img {
-  //   align-content: center;
-  //   flex-wrap: wrap;
-  //   flex-direction: column;
-  // }
 
   .sidebar-content {
     right: 0; // to center the div
     top: 0; // remove img spacer height
   }
 
+   .image-spacer {
+    display: none;
+  }
+
+  .blog-content-spacer {
+    height: 250px; // to offest the top property on the blog-post-img
+  }
+
   .blog-sidebar {
     padding-bottom: 100px;
   }
 
-  .image-spacer {
-    display: none;
-  }
 
+  /* ========================================== */
 }
 
-
+// Mobile Devices
 @media only screen and (max-width: 480px) {
   .sidebar-content {
     padding: 25px;
