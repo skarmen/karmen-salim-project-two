@@ -1550,9 +1550,21 @@ div.blog-input:nth-child(2) {
   /* ========================================== */
 }
 
+@media only screen and (max-width: 768px) {
+  .blog-content {
+    padding: 40px;
+  }
+}
+
 @media only screen and (max-width: 480px) {
-  .sidebar-content {
+  .sidebar-content, .blog-content {
     padding: 25px;
+  }
+  .blog-post-img {
+    top: -200px;
+  }
+  .blog-content-spacer {
+    height: 200px;
   }
 }
 

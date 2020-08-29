@@ -267,9 +267,24 @@ div.blog-input:nth-child(2) {
   /* ========================================== */
 }
 
+// Tablets
+
+@media only screen and (max-width: 768px) {
+  .blog-content {
+    padding: 40px;
+  }
+}
 // Mobile Devices
 @media only screen and (max-width: 480px) {
-  .sidebar-content {
+  .sidebar-content, .blog-content {
     padding: 25px;
+  }
+
+  .blog-post-img {
+    top: -200px; // to offset the g ap between the borders
+  }
+
+  .blog-content-spacer {
+    height: 200px; // to offset the new value for the top property on blog-post-img
   }
 }
