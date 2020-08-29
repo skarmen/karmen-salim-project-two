@@ -17,7 +17,7 @@
   padding-top: 30px;
   height: 90vh;
 }
-
+/*
 .blog-page-heading {
   display: flex;
   flex-direction: column;
@@ -30,6 +30,23 @@
   position: relative;
   left: -460px;
 }
+*/
+
+* {
+  //outline: 1px dotted red;
+}
+
+.blog-page-heading {
+  position: absolute;
+  left: 140px;
+  bottom: 240px;
+}
+.blog-page-heading h2 {
+  //text-align: left;
+  font-size: 350%;
+}
+
+
 .active-navlink, .secondary-color {
   color: $secondary-text-color;
 }
@@ -272,6 +289,10 @@ div.blog-input:nth-child(2) {
 @media only screen and (max-width: 768px) {
   .blog-content {
     padding: 40px;
+  }
+
+  .blog-page-heading {
+    left: 40px;
   }
 
 }

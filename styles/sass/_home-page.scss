@@ -58,11 +58,14 @@ h1 {
 header h2 {
   color: $primary-text-color;
   @include main-font(83.2px, 2.6px, bold);
+  line-height: 94.7px;
+}
+
+#home header h2 {
   text-align: center;
   position: relative;
   left: -80px;
   margin-top: 30px;
-  line-height: 94.7px;
 }
 
 
