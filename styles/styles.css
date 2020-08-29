@@ -831,19 +831,6 @@ header h2 {
   background-color: #220303;
   width: 100%;
   padding: 100px 0;
-  position: relative;
-}
-
-.left-image {
-  position: absolute;
-  top: -150px;
-  left: -80px;
-}
-
-.right-image {
-  position: absolute;
-  bottom: -150px;
-  right: -80px;
 }
 
 .wrapper.locations-section {
@@ -853,6 +840,24 @@ header h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.locations-row-1, .locations-row-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -872,16 +877,6 @@ h3 {
 
 .locations-section p {
   max-width: 600px;
-}
-
-.content-left.locations {
-  position: relative;
-  top: 200px;
-}
-
-.content-right.plan-ahead {
-  position: relative;
-  top: -200px;
 }
 
 /* Host A Party Section */

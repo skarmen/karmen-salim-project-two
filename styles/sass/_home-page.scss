@@ -92,7 +92,6 @@ header h2 {
   flex: 1;
   justify-content: space-around;
   flex-wrap: wrap;
-
 }
 
 
@@ -122,25 +121,38 @@ header h2 {
   background-color: $secondary-background-color;
   width: 100%;
   padding: 100px 0;
-  position: relative;
 }
 
-.left-image {
-  position: absolute;
-  top: -150px;
-  left: -80px;
-}
-
-.right-image {
-  position: absolute;
-  bottom: -150px;
-  right: -80px;
-}
 .wrapper.locations-section {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   flex-wrap: wrap;
 }
+
+.locations-row-1, .locations-row-2 {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.left-image {
+  // position: absolute;
+  // top: -150px;
+  // left: -80px;
+}
+
+.right-image {
+  // position: absolute;
+  // bottom: -150px;
+  // right: -80px;
+}
+// .wrapper.locations-section {
+//   display: flex;
+//   justify-content: center;
+//   flex-wrap: wrap;
+// }
 
 
 h3 {
@@ -157,15 +169,15 @@ h3 {
   max-width: 600px;
 }
 
-.content-left.locations {
-  position: relative;
-  top: 200px;
-}
+// .content-left.locations {
+//   position: relative;
+//   top: 200px;
+// }
 
-.content-right.plan-ahead {
-   position: relative;
-   top: -200px;
-}
+// .content-right.plan-ahead {
+//    position: relative;
+//    top: -200px;
+// }
 
 /* Host A Party Section */
 .host-section {
