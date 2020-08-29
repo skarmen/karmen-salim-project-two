@@ -125,11 +125,11 @@ header h2 {
   padding: 100px 0;
 }
 
-.wrapper.locations-section {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  flex-wrap: wrap;
+.locations-section {
+  // display: flex;
+  // justify-content: center;
+  // flex-direction: column;
+  // flex-wrap: wrap;
 }
 
 .locations-row-1,
@@ -137,25 +137,22 @@ header h2 {
   display: flex;
   flex: 1;
   justify-content: space-between;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
 }
 
-// .left-image {
-//   // position: absolute;
-//   // top: -150px;
-//   // left: -80px;
-// }
+.locations-row-1-img {
+  position: relative;
+  top: -140px;
+  box-shadow: 25px 25px 0px -5px $secondary-text-color;
+}
 
-// .right-image {
-//   // position: absolute;
-//   // bottom: -150px;
-//   // right: -80px;
-// }
-// // .wrapper.locations-section {
-// //   display: flex;
-// //   justify-content: center;
-// //   flex-wrap: wrap;
-// // }
+.locations-row-2-img {
+ position: relative;
+ bottom: -120px;
+ box-shadow: -25px 25px 0px -5px $secondary-text-color;
+}
+
+
 
 
 h3 {
@@ -311,10 +308,10 @@ h3 {
   position: relative;
   left: 100px;
 }
-.locations-row-1-img img {
-  position: relative;
-  left: -100px;
-}
+// .locations-row-1-img img {
+//   position: relative;
+//   left: -100px;
+// }
 
 
 // Hamburger Menu
@@ -329,31 +326,4 @@ h3 {
     flex-direction: column;
   }
 
-}
-
-.collapsible-menu label {
-  display: block;
-  cursor: pointer;
-  background: url(../bar-assets/menu.png) no-repeat left center;
-  padding: 10px 0 10px 50px;
-}
-input#menu {
-  display: none;
-}
-
-input:checked +label {
-  background-image: url(../bar-assets/close.png);
-}
-
-.menu-content {
-  max-height: 0;
-  overflow: hidden;
-  padding: 0 0 0 50px;
-}
-/* Toggle Effect */
-input:checked ~ label {
-    background-image: url(../bar-assets/close.png);
-}
-input:checked ~ .menu-content {
-    max-height: 100%;
 }
