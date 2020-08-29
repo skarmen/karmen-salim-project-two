@@ -250,14 +250,19 @@ h3 {
 
 /* Gallery Section */
 .gallery-section {
-      background-color: $secondary-background-color;
+  background-color: $secondary-background-color;
   width: 100%;
   padding: 100px 0;
   height: 100%;
+}
+
+.gallery {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+.gallery-section img {
+  margin: 5px;
 }
 
 /* Footer */
