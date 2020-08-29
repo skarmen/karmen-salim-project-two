@@ -886,16 +886,22 @@ header h2 {
 .locations-row-1-img {
   position: relative;
   top: -140px;
+  left: -90px;
+}
+
+.locations-row-1 img {
   -webkit-box-shadow: 25px 25px 0px -5px #ff8327;
           box-shadow: 25px 25px 0px -5px #ff8327;
-  left: -90px;
+}
+
+.locations-row-2 img {
+  -webkit-box-shadow: -25px 25px 0px -5px #ff8327;
+          box-shadow: -25px 25px 0px -5px #ff8327;
 }
 
 .locations-row-2-img {
   position: relative;
   bottom: -120px;
-  -webkit-box-shadow: -25px 25px 0px -5px #ff8327;
-          box-shadow: -25px 25px 0px -5px #ff8327;
   right: -90px;
 }
 

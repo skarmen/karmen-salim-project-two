@@ -159,14 +159,20 @@ header h2 {
 .locations-row-1-img {
   position: relative;
   top: -140px;
-  box-shadow: 25px 25px 0px -5px $secondary-text-color;
   left: -90px;
+}
+
+.locations-row-1 img {
+  box-shadow: 25px 25px 0px -5px $secondary-text-color;
+}
+
+.locations-row-2 img {
+  box-shadow: -25px 25px 0px -5px $secondary-text-color;
 }
 
 .locations-row-2-img {
   position: relative;
   bottom: -120px;
-  box-shadow: -25px 25px 0px -5px $secondary-text-color;
   right: -90px;
 }
 
