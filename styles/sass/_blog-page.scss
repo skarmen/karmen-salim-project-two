@@ -61,6 +61,11 @@
   justify-content: inherit;
   position: relative;
   right: -50px;
+  top: -433px;
+}
+
+.image-spacer {
+  height: 433px;
 }
 
 .sidebar-content p {
@@ -73,14 +78,14 @@
 
 .sidebar-img {
   position: relative;
-  left: -120px;
-  top: -40px;
+  z-index: 10;
+  top: -20px;
 }
 
-.sidebar-img img {
-  width: 130% !important;
-  max-width: 130% !important;
-}
+// .sidebar-img img {
+//   width: 100%;
+//   max-width: 50%;
+// }
 
 .posts-heading {
   margin-top: 39px;
