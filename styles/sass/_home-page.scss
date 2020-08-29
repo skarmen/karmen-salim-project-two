@@ -238,7 +238,7 @@ h3 {
 
 .events-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   flex: 1;
   flex-wrap: wrap;
@@ -346,12 +346,22 @@ h3 {
   //   flex-direction: column;
   // }
 
+  // Home Page - Header
   #home .banner-content {
     height: 70%
   }
 
   .box-image {
     display: none;
+  }
+
+  // Events Section
+  .events-image {
+    margin-bottom: 50px;
+  }
+
+  .events-container {
+    padding: 20px;
   }
 }
 
