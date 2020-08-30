@@ -343,6 +343,41 @@ h3 {
 
 /* MEDIA QUERIES
 =================================== */
+@media (max-width: 1200px) {
+  // Home Page - Locations Section
+
+/* Element | file:///Users/karmen/juno/projects/bar-one-psd-conversion/index.html */
+
+  .locations-row-1,
+  .locations-row-2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+    // Align img in the center
+  .locations-row-1-img {
+    left: 0;
+  }
+
+  .locations-row-2-img {
+    right: 0
+  }
+
+  .locations-content-row-1 ,
+  .locations-content-row-2 {
+    margin-left: 0;
+  }
+
+  .locations-content-row-2 {
+    margin-top: 100px;
+    align-items: flex-start;
+    margin-right: 0;
+  }
+
+}
+
+
 @media (max-width: 768px) {
   // .main-menu {
   //   justify-content: space-around;
@@ -390,5 +425,14 @@ h3 {
   // home Page - Host Section
   .host-content {
     text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .locations-content-row-1,
+  .locations-content-row-2,
+  .host-content,
+  .events-container {
+    padding: 0 20px;
   }
 }
