@@ -1224,7 +1224,6 @@ h3 {
       -ms-flex-pack: end;
           justify-content: flex-end;
   height: 65%;
-  position: relative;
 }
 
 .active-navlink {
