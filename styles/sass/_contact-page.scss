@@ -99,6 +99,17 @@ input, textarea {
   @include main-font(39px, 1.9px); // convert pixels to rem
 }
 
+input[type="email"]:focus,
+input[type="text"]:focus,
+textarea:focus {
+  background-color:  rgba(255, 131, 39, 0.1);
+}
+
+
+
+
+
+
 input::placeholder, textarea::placeholder {
   color: #fff!important;
 }

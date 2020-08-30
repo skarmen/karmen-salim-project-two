@@ -1204,6 +1204,12 @@ input, textarea {
   font-weight: 400;
 }
 
+input[type="email"]:focus,
+input[type="text"]:focus,
+textarea:focus {
+  background-color: rgba(255, 131, 39, 0.1);
+}
+
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: #fff !important;
 }

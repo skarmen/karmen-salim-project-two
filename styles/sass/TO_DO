@@ -1,9 +1,9 @@
-// Header - all pages
-1. Make it responsive
-2. Clean Up html & Css
+// Header - all pages - DONE
+1. Make it responsive - DONE
+2. Clean Up html & Css - check for extraneous code
 3. Convert px to rems - DONE
 4. Check for repetitive code
-5. Check indentation
+5. Check indentation - DONE
 6. Improve naming
 7. Add effects ( hover, trsnaform etc)
 8. Remove any classes from the wrapper
