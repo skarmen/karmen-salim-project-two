@@ -744,6 +744,10 @@ header {
   width: 100%;
 }
 
+.collapsible-menu {
+  display: none;
+}
+
 h1 {
   font-family: 'Tulpen One',"Times New Roman", Times, cursive, sans-serif;
   font-size: 261.4px;
@@ -1115,6 +1119,9 @@ h3 {
   .events-container {
     padding: 20px;
   }
+  .collapsible-menu {
+    display: block !important;
+  }
   .desktop-nav {
     display: none;
   }
@@ -1123,11 +1130,6 @@ h3 {
     padding: 40px;
     -webkit-box-shadow: 1px 1px 5px rgba(255, 131, 39, 0.3);
             box-shadow: 1px 1px 5px rgba(255, 131, 39, 0.3);
-  }
-  .collapsible-menu a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
   }
   .collapsible-menu label {
     font-family: 'Tulpen One',"Times New Roman", Times, cursive, sans-serif;

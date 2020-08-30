@@ -48,6 +48,10 @@ header {
   width: 100%;
 }
 
+.collapsible-menu {
+  display: none;
+}
+
 h1 {
   font-family: 'Tulpen One',"Times New Roman", Times, cursive, sans-serif;
   font-size: 261.4px; // convert pixels to rem
@@ -416,45 +420,32 @@ h3 {
 
 
   // Navigation
-
+  // Mobile Navigation Idea from - https://codeburst.io/how-to-make-a-collapsible-menu-using-only-css-a1cd805b1390
+  .collapsible-menu {
+    display: block!important;
+  }
+  
   .desktop-nav {
     display: none;
   }
 
-  // .mobile-nav {
-  //   display: inline-block;
-  // }
-
-
-  // .menu-content {
-  //   // font-family: 'Oswald', sans-serif;
-  //   // padding: 0 0 0 50px;
-  // }
   .collapsible-menu {
     background-color: rgba(17,16,16,0.6);
     padding: 40px;
     box-shadow: 1px 1px 5px rgba(255,131,39, 0.3);
   }
 
-  // .collapsible-menu ul {
-  //   // list-style-type: none;
-  //   // padding: 0;
-  // }
-  .collapsible-menu a {
-    display:block;
-    padding: 10px;
-    text-decoration: none;
-  }
 
   .collapsible-menu label {
     font-family: 'Tulpen One',"Times New Roman", Times, cursive, sans-serif;
     font-size: 46px;
     padding: 20px;
-    cursor: pointer;
+    cursor: pointer; // make the label act a link
     background: url(../bar-assets/menu.png) no-repeat left center;
     padding: 10px 0 10px 60px;
   }
 
+  // hide the checkbox
   input#menu {
     display: none;
   }
@@ -464,15 +455,22 @@ h3 {
     background-image: url(../bar-assets/close.png);
   }
 
+  // when checkbox in unchecked we want to prevent the menu from collapsing
   .menu-content {
     max-height: 0;
     overflow: hidden;
   }
 
-
+  // expand the menu to 100% when the checkbox is checked
   input:checked ~ .menu-content {
     max-height: 100%;
   }
+
+  // .menu-content ul li:hover {
+  //   border-bottom: 1px solid red;
+  //   border-width: 20px;
+  //   transition: all1s ease-in;
+  // }
 
 
 
@@ -553,3 +551,6 @@ h3 {
 // .hidden {
 //     display: none;
 // }
+
+
+// Icons made by <a href="https://www.flaticon.com/authors/itim2101" title="itim2101">itim2101
