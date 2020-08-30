@@ -24,7 +24,8 @@ header {
   width: 50%;
 
 }
-nav ul {
+
+.desktop-nav ul {
   display: flex;
   justify-content: center;
 }
@@ -39,6 +40,7 @@ nav ul {
 .active-navlink {
   color: $secondary-text-color;
 }
+
 .main-menu {
 	display: flex;
   justify-content: center;
@@ -412,6 +414,68 @@ h3 {
     padding: 20px;
   }
 
+
+  // Navigation
+
+  .desktop-nav {
+    display: none;
+  }
+
+  // .mobile-nav {
+  //   display: inline-block;
+  // }
+
+
+  // .menu-content {
+  //   // font-family: 'Oswald', sans-serif;
+  //   // padding: 0 0 0 50px;
+  // }
+  .collapsible-menu {
+    background-color: rgba(17,16,16,0.6);
+    padding: 40px;
+    box-shadow: 1px 1px 5px rgba(255,131,39, 0.3);
+  }
+
+  // .collapsible-menu ul {
+  //   // list-style-type: none;
+  //   // padding: 0;
+  // }
+  .collapsible-menu a {
+    display:block;
+    padding: 10px;
+    text-decoration: none;
+  }
+
+  .collapsible-menu label {
+    font-family: 'Tulpen One',"Times New Roman", Times, cursive, sans-serif;
+    font-size: 46px;
+    padding: 20px;
+    cursor: pointer;
+    background: url(../bar-assets/menu.png) no-repeat left center;
+    padding: 10px 0 10px 60px;
+  }
+
+  input#menu {
+    display: none;
+  }
+
+  /* Toggle Effect */
+  input:checked + label {
+    background-image: url(../bar-assets/close.png);
+  }
+
+  .menu-content {
+    max-height: 0;
+    overflow: hidden;
+  }
+
+
+  input:checked ~ .menu-content {
+    max-height: 100%;
+  }
+
+
+
   // Home Page - Gallery Section
 
   .gallery {
@@ -462,3 +526,30 @@ h3 {
     padding: 0 20px;
   }
 }
+
+
+// .top-nav {
+//   position: relative;
+//   display: inline-block;
+// }
+
+// .main-menu li {
+//   display: block
+// }
+
+// .hidden {
+//   display: none;
+// }
+
+// #navContainer {
+//     position: relative;
+//     display: inline-block;
+// }
+
+// #navContent button {
+//     display: block;
+// }
+
+// .hidden {
+//     display: none;
+// }

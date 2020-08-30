@@ -10,6 +10,7 @@
   <!-- CSS Styles -->
   <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <script src="./util.js"></script>
 </head>
 <body id="home">
 
@@ -17,15 +18,32 @@
   <header class="header-content">
     <div class="wrapper">
       <!-- Navigation -->
-      <nav class="top-nav">
-        <ul class="main-menu">
+      <nav class="desktop-nav">
+        <ul class="main-menu" id="mainMenu">
           <li><a href="./index.html" class="active-navlink">Home</a></li>
           <li><a href="./index.html">About</a></li>
-          <li><a href="./index.html" class="top-nav-logo">Bar-One</a></li>
+          <li><a href="./index.html" class="top-nav-logo" onclick="toggleMenu()">Bar-One</a></li>
           <li><a href="./blog.html">Blog</a></li>
           <li><a href="./contact.html">Contact</a></li>
         </ul>
       </nav>
+      <!-- Navigation Ends -->
+      <!-- Mobile Navigation -->
+      <div class="collapsible-menu">
+        <input type="checkbox" id="menu">
+        <label for="menu">Menu</label>
+        <div class="menu-content">
+          <ul>
+            <li><a href="#"></a>Home</li>
+            <li><a href="#"></a>Services</li>
+            <li><a href="#"></a>Projects</li>
+            <li><a href="#"></a>About</li>
+            <li><a href="#"></a>Blog</li>
+            <li><a href="#"></a>Contacts</li>
+          </ul>
+        </div>
+      </div>
+
       <!-- Navigation Ends -->
       <!-- Banner Heading -->
       <div class="banner-content">
@@ -164,17 +182,17 @@
     <!-- Gallery -->
     <section class="gallery-section">
       <div class="wrapper">
-        <div class="gallery">
-          <div class="cell">
-            <img src="./bar-assets/gallery-image-1.jpg" alt="">
-          </div>
-          <div class="cell">
-            <img src="./bar-assets/gallery-image-2.jpg" alt="">
-          </div>
-          <div class="cell">
-            <img src="./bar-assets/gallery-image-3.jpg" alt="">
-          </div>
+      <div class="gallery">
+        <div class="cell">
+          <img src="./bar-assets/gallery-image-1.jpg" alt="">
         </div>
+        <div class="cell">
+          <img src="./bar-assets/gallery-image-2.jpg" alt="">
+        </div>
+        <div class="cell">
+          <img src="./bar-assets/gallery-image-3.jpg" alt="">
+        </div>
+      </div>
       </div>
 
     </section>

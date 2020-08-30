@@ -713,7 +713,7 @@ header {
   width: 50%;
 }
 
-nav ul {
+.desktop-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1114,6 +1114,42 @@ h3 {
   }
   .events-container {
     padding: 20px;
+  }
+  .desktop-nav {
+    display: none;
+  }
+  .collapsible-menu {
+    background-color: rgba(17, 16, 16, 0.6);
+    padding: 40px;
+    -webkit-box-shadow: 1px 1px 5px rgba(255, 131, 39, 0.3);
+            box-shadow: 1px 1px 5px rgba(255, 131, 39, 0.3);
+  }
+  .collapsible-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+  }
+  .collapsible-menu label {
+    font-family: 'Tulpen One',"Times New Roman", Times, cursive, sans-serif;
+    font-size: 46px;
+    padding: 20px;
+    cursor: pointer;
+    background: url(../bar-assets/menu.png) no-repeat left center;
+    padding: 10px 0 10px 60px;
+  }
+  input#menu {
+    display: none;
+  }
+  /* Toggle Effect */
+  input:checked + label {
+    background-image: url(../bar-assets/close.png);
+  }
+  .menu-content {
+    max-height: 0;
+    overflow: hidden;
+  }
+  input:checked ~ .menu-content {
+    max-height: 100%;
   }
   .gallery {
     -webkit-box-orient: vertical;
