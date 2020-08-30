@@ -738,7 +738,7 @@ header {
 .top-nav-logo {
   font-family: 'Tulpen One',"Times New Roman", Times, cursive, sans-serif;
   font-size: 4.6rem;
-  margin: 20px;
+  padding: 0 20px;
 }
 
 .active-navlink {
@@ -759,6 +759,38 @@ header {
 
 .collapsible-menu {
   display: none;
+}
+
+.main-menu li a {
+  position: relative;
+}
+
+.main-menu li a::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 1px;
+  bottom: 20px;
+  left: 0;
+  border-bottom: 2px solid #ff8327;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-out 0.2s;
+  transition: all 0.3s ease-out 0.2s;
+}
+
+.main-menu li a:hover::after {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.main-menu li a:hover,
+.main-menu li a :focus {
+  color: rgba(255, 131, 39, 0.8);
+  -webkit-transition: all 0.3s ease-in 0.3s;
+  transition: all 0.3s ease-in 0.3s;
 }
 
 h1 {
@@ -1710,7 +1742,7 @@ div.blog-input:nth-child(2) {
     position: absolute;
     width: 100px;
     height: 1px;
-    bottom: 0px;
+    bottom: 10px;
     left: 0;
     border-bottom: 2px solid #ff8327;
     visibility: hidden;

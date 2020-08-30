@@ -34,7 +34,7 @@ header {
 .top-nav-logo {
   font-family: 'Tulpen One',"Times New Roman", Times, cursive, sans-serif;
   font-size: 4.6rem;
-  margin: 20px;
+  padding: 0 20px;
 }
 
 .active-navlink {
@@ -50,6 +50,35 @@ header {
 
 .collapsible-menu {
   display: none;
+}
+
+.main-menu li a {
+  // required for the hover effect
+  position: relative;
+}
+
+.main-menu li a::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 1px;
+  bottom: 20px;
+  left: 0;
+  border-bottom: 2px solid $secondary-text-color;
+  visibility: hidden; // fallback fro browsers not supporting CSS animations
+  transform: scaleX(0); // hide
+  transition: all 0.3s ease-out 0.2s;
+}
+
+.main-menu li a:hover::after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.main-menu li a:hover,
+.main-menu li a :focus {
+  color: rgba(255, 131, 39, 0.8);
+  transition: all 0.3s ease-in 0.3s;
 }
 
 h1 {

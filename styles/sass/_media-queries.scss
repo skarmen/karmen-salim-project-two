@@ -198,9 +198,8 @@
     position: absolute;
     width: 100px;
     height: 1px;
-    bottom: 0px;
+    bottom: 10px;
     left: 0;
-
     border-bottom: 2px solid $secondary-text-color;
     visibility: hidden; // fallback fro browsers not supporting CSS animations
     transform: scaleX(0); // hide
