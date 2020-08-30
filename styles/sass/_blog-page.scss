@@ -1,14 +1,3 @@
-// TO DO
-// 1. Fix width of input fields on the form - DONE
-// 2. BLog Post column Border left and bottom on the section - DONE
-// 3. Check colors
-// 4. Check forn size and font family
-// 5. Responsive Design
-// 6. Clean up HTML & CSS
-
-
-
-
 /* Blog Page - Header */
  .blog-page-header {
    background-image: url(../bar-assets/blog-header-1.jpg);
@@ -17,37 +6,17 @@
   padding-top: 30px;
   height: 90vh;
 }
-/*
-.blog-page-heading {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: 65%;
-  position: relative;
-}
-
-.blog-page-heading h2 {
-  position: relative;
-  left: -460px;
-}
-*/
-
-
 
 .blog-page-heading {
   position: absolute;
   left: 140px;
   bottom: 240px;
 }
-.blog-page-heading h2 {
-  //text-align: left;
-  font-size: 350%;
-}
-
 
 .active-navlink, .secondary-color {
   color: $secondary-text-color;
 }
+
 
 /* Blog Page - Main Section */
 .blog-page-main-section {
@@ -57,6 +26,7 @@
   display: flex;
   justify-content: space-between;
 }
+
 
 /* Blog Page - Sidebar layout */
 .blog-sidebar {
@@ -70,7 +40,6 @@
   width: 350px;
   padding: 40px;
   margin: 0;
-  // WTF? - what to do with the img?
   display: flex;
   flex-direction: column;
   justify-content: inherit;
@@ -97,17 +66,16 @@
   top: -20px;
 }
 
-
 .posts-heading {
   margin-top: 39px;
 }
-
 
 .recent-posts-list li:before {
   content:"· ";
   vertical-align: middle;
   color: $button-primary-color;
 }
+
 
 /* Blog Page - Blog Post Layout*/
 .blog-post {
@@ -134,27 +102,30 @@
 }
 
 .blog-content {
-  // Need to know if this is correct
   margin-top: -180px;
   padding: 80px;
 }
+
 
 /* Blog Page - Comments Section */
 .comments-section-col {
   margin: 100px auto;
 }
 
-.comments-row-1, .comments-row-2 {
+.comments-row-1,
+.comments-row-2 {
   display: flex;
   max-width: 100%;
 }
 
-.comments-img-1, .comments-img-2 {
+.comments-img-1,
+.comments-img-2 {
   width: 300px;
   position: relative;
   top: 50px;
   margin-right: 40px;
 }
+
 
 /* Blog Page - Contact Form */
 form.blog-page-form  {

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,22 +11,23 @@
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
 </head>
-
 <body>
-  <!-- Header -->
+
   <header class="blog-page-header">
     <div class="wrapper">
+      <!-- Desktop Navigation STARTS -->
       <nav class="desktop-nav">
         <ul class="main-menu">
           <li><a href="./index.html">Home</a></li>
           <li><a href="./index.html">About</a></li>
-          <!-- TO DO - ask for Bar One Logo Image -->
           <li><a href="./index.html" class="top-nav-logo">Bar-One</a></li>
           <li><a href="./blog.html" class="active-navlink">Blog</a></li>
           <li><a href="./contact.html" >Contact</a></li>
         </ul>
       </nav>
-      <!-- Mobile Navigation -->
+      <!-- Desktop Navigation ENDS -->
+
+      <!-- Mobile Navigation STARTS -->
       <div class="collapsible-menu">
         <input type="checkbox" id="menu">
         <label for="menu">Menu</label>
@@ -40,24 +40,27 @@
           </ul>
         </nav>
       </div>
-      <!-- Mobile Navigation Ends -->
+      <!-- Mobile Navigation ENDS-->
+
       <div class="blog-page-heading">
         <h2>Blog</h2>
       </div>
+
     </div>
+    <!-- Header Wrapper ENDS -->
   </header>
 
   <main>
     <section class="blog-page-main-section">
-      <!-- Sidebar Col -->
+      <!-- Sidebar Col STARTS -->
       <div class="blog-sidebar col-1">
         <div class="sidebar-img">
           <img src="./bar-assets/sidebar-image.jpg" alt="Bartender pooring tap beer.">
         </div>
         <div class="wrapper">
-          <!-- Sidebar Content -->
+          <!-- Sidebar Content STARTS -->
           <div class="sidebar-content">
-            <div class="image-spacer"></div>
+          <div class="image-spacer"></div>
             <h3>Our Mission</h3>
             <p>Nom dopibus nisl vitae elit fringilla retrum. Aenean sollicitudin, erat a elementum.</p>
             <span><a href="#about" class="secondary-color">Find out more.</a></span>
@@ -69,21 +72,21 @@
               <li>Lorem ipsum dolor sit ipser</li>
             </ul>
           </div>
-            <!-- Sidebar Content Ends -->
+          <!-- Sidebar Content ENDS -->
         </div>
-        <!-- Sidebar Wrapper Ends -->
-          <div class="blog-content-spacer"></div>
-
-
+        <!-- Sidebar Wrapper ENDS -->
+        <div class="blog-content-spacer"></div>
       </div>
-      <!-- Sidebar Col Ends -->
+      <!-- Sidebar Col ENDS -->
 
-      <!-- Blog Post Col -->
+      <!-- Blog Post Col STARTS-->
       <div class="blog-post col-2">
+        <!-- Border Content Div STARTS -->
         <div class="border-content">
           <div class="blog-post-img">
             <img src="./bar-assets/post-image.png" alt="Few different dishes placed on the bar, ready for serving.">
           </div>
+          <!-- Blog Content Wrapper STARTS -->
           <div class="wrapper">
             <div class="blog-content">
               <h3>New Menu!</h3>
@@ -94,42 +97,48 @@
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi fugit eos assumenda, sed voluptatem tempora facilis. Quos doloribus nobis ea.</p>
             </div>
           </div>
+          <!-- Blog Content Wrapper ENDS -->
         </div>
+        <!-- Border Content Div ENDS -->
 
+        <!-- Comments Section STARTS -->
+        <div class="comments-section-col">
+          <!-- Comments Section Wrapper STARTS -->
+          <div class="wrapper">
+            <!-- Comments row-1  -->
+            <h3>Comments:</h3>
+            <div class="comments-row-1">
+              <div class="comments-img-1">
+                <img src="./bar-assets/comment-image-1.jpg" alt="">
+              </div>
+              <div class="comments-content">
+                <p class="secondary-color">Tuesday October 9th, 2019 by Sulaire</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim laborum dolor, iusto animi ducimus facilis! In eligendi neque fuga repellendus quae. Saepe, suscipit consequuntur.</p>
+              </div>
+            </div>
+            <!-- Comments row-1 ENDS -->
 
-        <div class="wrapper comments-section-col">
-          <!-- Comments row-1  -->
-          <h3>Comments:</h3>
-          <div class="comments-row-1">
-            <div class="comments-img-1">
-              <img src="./bar-assets/comment-image-1.jpg" alt="">
+            <!-- Comments row-2 STARTS -->
+            <div class="comments-row-2">
+              <div class="comments-img-2">
+                <img src="./bar-assets/comment-image-2.jpg" alt="">
+              </div>
+              <div class="comments-content">
+                <p class="secondary-color">Tuesday October 9th, 2019 by Sulaire</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim laborum dolor, iusto animi ducimus facilis! In eligendi neque fuga repellendus quae. Saepe, suscipit consequuntur.</p>
+              </div>
             </div>
-            <div class="comments-content">
-              <p class="secondary-color">Tuesday October 9th, 2019 by Sulaire</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim laborum dolor, iusto animi ducimus facilis! In eligendi neque fuga repellendus quae. Saepe, suscipit consequuntur.</p>
-            </div>
+            <!-- Comments row-2 ENDS -->
           </div>
-          <!-- Comments row-1 ends -->
-
-          <!-- Comments row-2 -->
-          <div class="comments-row-2">
-            <div class="comments-img-2">
-              <img src="./bar-assets/comment-image-2.jpg" alt="">
-            </div>
-            <div class="comments-content">
-              <p class="secondary-color">Tuesday October 9th, 2019 by Sulaire</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim laborum dolor, iusto animi ducimus facilis! In eligendi neque fuga repellendus quae. Saepe, suscipit consequuntur.</p>
-            </div>
-          </div>
-          <!-- Comments row-2 ends -->
+          <!-- Comments Section Wrapper ENDS -->
         </div>
-        <!-- Comments Section Col Ends -->
+        <!-- Comments Section Col ENDS -->
 
-        <!-- Contact Form -->
+
+        <!-- Contact Form STARTS -->
         <div class="wrapper">
           <form action="/"  class="blog-page-form">
-
-            <!-- Row 1 -->
+            <!-- Comment Form Row 1 STARTS -->
             <div class="blog-page-input-form row-1">
               <div class="blog-input col-1">
                 <label for="name" class="sr-only">Name</label>
@@ -140,33 +149,29 @@
                 <input type="email" id="email" name="Email" placeholder="Email address" required>
               </div>
             </div>
-            <!-- Row 1 End -->
+            <!-- Comment Form Row 1 ENDS -->
 
-            <!-- Row 2 -->
+            <!-- Comment Form Row 2 STARTS -->
             <div class="blog-page-message row-2">
               <label for="message" class="sr-only">Comment</label>
               <textarea id="message" name="Message" rows="10" maxlength="600" placeholder="Message" required></textarea>
             </div>
-            <!-- Row 2 End -->
+            <!-- Comment Form Row 2 ENDS -->
 
-            <!-- Row 3 -->
+            <!-- Comment From Row 3 STARTS -->
             <div class="btn row-3">
               <button class="submit-button" type="submit">Post Comment</button>
             </div>
-            <!-- Row 3 End -->
+            <!-- Comment Form Row 3 ENDS -->
           </form>
         </div>
-        <!-- Form Div End -->
-
+        <!-- Form Wrapper ENDS -->
       </div>
-      <!-- Blog Post Col Ends -->
+      <!-- Blog Post Col ENDS -->
     </section>
   </main>
 
-
-
-
-
+  
   <!-- Footer -->
   <footer>
     <span>Copyright &copy; 2019 Juno College<a href="https://junocollege.com/" class="juno-footer-link"> - Created at Juno College</a></span>
