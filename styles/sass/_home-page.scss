@@ -283,9 +283,16 @@ h3 {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-.gallery-section img {
-  margin: 5px;
+
+.cell:last-of-type {
+  margin-right: 0;
 }
+.cell {
+  width: calc((100% - 50px)/ 3);
+  margin-right: 25px;
+}
+
+
 
 /* Footer */
 footer {
@@ -403,6 +410,25 @@ h3 {
 
   .events-container {
     padding: 20px;
+  }
+
+  // Home Page - Galler Section
+
+  .gallery {
+    flex-direction: column;
+  }
+
+  .cell {
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    margin-right: 0px;
+    margin-top: 25px;
+    width: 70%;
+  }
+
+  .cell:first-of-type {
+    margin-top: 0;
   }
 }
 
