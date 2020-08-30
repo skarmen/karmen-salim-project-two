@@ -421,19 +421,22 @@ h3 {
 
   // Navigation
   // Mobile Navigation Idea from - https://codeburst.io/how-to-make-a-collapsible-menu-using-only-css-a1cd805b1390
-  .collapsible-menu {
-    display: block!important;
-  }
-  
+
   .desktop-nav {
     display: none;
   }
 
   .collapsible-menu {
+    display: block!important;
+    position: absolute;
+    width: 100%;
+    left: 0;
     background-color: rgba(17,16,16,0.6);
     padding: 40px;
     box-shadow: 1px 1px 5px rgba(255,131,39, 0.3);
   }
+
+
 
 
   .collapsible-menu label {
