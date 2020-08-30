@@ -1697,6 +1697,12 @@ div.blog-input:nth-child(2) {
   input:checked ~ .menu-content {
     max-height: 100%;
   }
+  .mobile-menu li {
+    padding: 10px 0;
+  }
+  .mobile-menu li a {
+    padding: 5px !important;
+  }
   /* ================== */
   /*Home Page - Gallery Section */
   .gallery {
