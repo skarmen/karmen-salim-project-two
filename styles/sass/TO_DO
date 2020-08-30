@@ -1,13 +1,14 @@
 // Header - all pages
 1. Make it responsive
 2. Clean Up html & Css
-3. Convert px to rems
+3. Convert px to rems - DONE
 4. Check for repetitive code
 5. Check indentation
 6. Improve naming
 7. Add effects ( hover, trsnaform etc)
 8. Remove any classes from the wrapper
 9. Add Hover and transition effects
+10. Created a seprate partil for media queries - DONE
 
 // HOME PAGE
 // Navbar

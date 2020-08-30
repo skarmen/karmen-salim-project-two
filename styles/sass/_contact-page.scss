@@ -5,22 +5,15 @@
   background-repeat: no-repeat;
   padding-top: 30px;
   height: 90vh;
-  // position: relative;
-  // z-index: 1;
+
 }
 
 .contact-page-heading {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: 65%;
-  // position: relative;
+  position: absolute;
+  left: 140px;
+  bottom: 240px;
 }
 
-// .contact-page-heading h2 {
-//   // position: relative;
-//   // left: -500px;
-// }
 
 .active-navlink {
   color: $secondary-text-color;
@@ -32,7 +25,6 @@
   width: 100%;
   padding: 100px 0;
   height: 500px;
-  // position: relative;
 }
 
 .contact-row {
@@ -42,12 +34,12 @@
 .contact-info {
   flex: 1;
 }
-.contact-icons  li {
+.contact-icons li {
   display: inline-block;
 }
 
 .contact-icons {
-  margin-left: -20px; // because of paddign on the a tag
+  margin-left: -20px; // because of padding on the a tag
 }
 
 .contact-info-list li:first-child {
@@ -76,8 +68,6 @@ form.contact-page {
   position: relative;
   z-index: 1;
   top: -250px;
-
-
 }
 
 .row-1 {
@@ -110,19 +100,18 @@ input, textarea {
 }
 
 input::placeholder, textarea::placeholder {
-  color: white;
+  color: #fff!important;
 }
+
 div.contact-input:nth-child(2) {
   margin-left: 30px;
 }
 
 .contact-page-input-form input {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #fff;
   padding-bottom: 10px;
 
 }
-
-
 
 .contact-page-message textarea {
   box-sizing: border-box;
@@ -139,8 +128,7 @@ div.contact-input:nth-child(2) {
   border: none;
   width: 100%;
   font-family: 'Tulpen One',"Times New Roman", Times, cursive, sans-serif;;
-  font-size: 3.9rem; // convert pixels to rem
+  font-size: 3.9rem; 
   letter-spacing: 1.9px;
   padding: 5px 0px;
 }
-

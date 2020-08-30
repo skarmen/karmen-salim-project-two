@@ -1206,17 +1206,9 @@ h3 {
 }
 
 .contact-page-heading {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  height: 65%;
+  position: absolute;
+  left: 140px;
+  bottom: 240px;
 }
 
 .active-navlink {
@@ -1339,19 +1331,19 @@ input, textarea {
 }
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-  color: white;
+  color: #fff !important;
 }
 
 input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-  color: white;
+  color: #fff !important;
 }
 
 input::-ms-input-placeholder, textarea::-ms-input-placeholder {
-  color: white;
+  color: #fff !important;
 }
 
 input::placeholder, textarea::placeholder {
-  color: white;
+  color: #fff !important;
 }
 
 div.contact-input:nth-child(2) {
@@ -1359,7 +1351,7 @@ div.contact-input:nth-child(2) {
 }
 
 .contact-page-input-form input {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #fff;
   padding-bottom: 10px;
 }
 
