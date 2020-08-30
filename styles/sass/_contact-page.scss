@@ -57,7 +57,7 @@
 
 
 /* Contact Page - Contact Form */
-form.contact-page-form {
+form.contact-page {
   background-color: $secondary-background-color;
   padding: 40px;
   display: flex;
@@ -146,5 +146,35 @@ div.contact-input:nth-child(2) {
 
 
 @media (max-width: 1200px) {
+
+  .contact-section {
+    height: 1200px;
+  }
+
+  .contact-row {
+    flex-direction: column;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    flex-wrap: wrap;
+  }
+
+  .contact-page-form {
+    margin-top: 100px;
+    position: static;
+  }
+}
+
+@media (max-width: 480px) {
+  form.contact-page {
+    box-shadow: 15px 15px 0px -5px #ff8327;
+  }
+
+  .contact-icons a {
+    padding: 15px;
+  }
 
 }
