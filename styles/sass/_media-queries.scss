@@ -1,3 +1,5 @@
+/* MEDIA QUERIES
+=================================== */
 
 // First Breakpoint
 @media (max-width: 1200px) {
@@ -20,6 +22,36 @@
   .contact-page-form {
     margin-top: 100px;
     position: static;
+  }
+  /* =============== */
+
+
+  /*  Home Page - Locations Section */
+  .locations-row-1,
+  .locations-row-2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  // Align img in the center
+  .locations-row-1-img {
+    left: 0;
+  }
+
+  .locations-row-2-img {
+    right: 0
+  }
+
+  .locations-content-row-1 ,
+  .locations-content-row-2 {
+    margin-left: 0;
+  }
+
+  .locations-content-row-2 {
+    margin-top: 100px;
+    align-items: flex-start;
+    margin-right: 0;
   }
   /* =============== */
 }
@@ -76,6 +108,98 @@
   .blog-page-heading,
   .contact-page-heading {
     left: 40px;
+  }
+  /* ================== */
+
+
+  /* Home Page & Navigation */
+  /* Home Page - Header */
+  #home .banner-content {
+    height: 70%
+  }
+
+  .box-image {
+    display: none;
+  }
+
+  /* Home Page - Events Section */
+  .events-image {
+    margin-bottom: 50px;
+  }
+
+  .events-container {
+    padding: 20px;
+  }
+  /* ================== */
+
+
+  /* Navigation */
+  // Mobile Navigation Idea from - https://codeburst.io/how-to-make-a-collapsible-menu-using-only-css-a1cd805b1390
+  // Icons made by <a href="https://www.flaticon.com/authors/itim2101" title="itim2101">itim2101
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .collapsible-menu {
+    display: block!important;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(17,16,16,0.6);
+    padding: 40px;
+    box-shadow: 1px 1px 5px rgba(255,131,39, 0.3);
+  }
+
+  .collapsible-menu label {
+    font-family: 'Tulpen One',"Times New Roman", Times, cursive, sans-serif;
+    font-size: 4.6rem;
+    padding: 20px;
+    cursor: pointer; // make the label act a link
+    background: url(../bar-assets/menu.png) no-repeat left center;
+    padding: 10px 0 10px 60px;
+  }
+
+  // hide the checkbox
+  input#menu {
+    display: none;
+  }
+
+  /* Toggle Effect */
+  input:checked + label {
+    background-image: url(../bar-assets/close.png);
+  }
+
+  // when checkbox in unchecked we want to prevent the menu from collapsing
+  .menu-content {
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  // expand the menu to 100% when the checkbox is checked
+  input:checked ~ .menu-content {
+    max-height: 100%;
+  }
+  /* ================== */
+
+
+  /*Home Page - Gallery Section */
+  .gallery {
+    flex-direction: column;
+  }
+
+  .cell {
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    margin-right: 0px;
+    margin-top: 25px;
+    width: 70%;
+  }
+
+  .cell:first-of-type {
+    margin-top: 0;
   }
   /* ================== */
 }

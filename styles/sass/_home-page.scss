@@ -75,11 +75,10 @@ header h2 {
   margin-top: 30px;
 }
 
+/*================================== */
 
 
 /* More Info Section */
-// TO DO
-// 1. Need to have the icons within the wrapper rn they are bleeding out
 .more-info {
   background-color: $primary-background-color;
   width: 100%;
@@ -94,8 +93,21 @@ header h2 {
 }
 
 .more-info p {
-  max-width: 600px;
-  margin-top: 0;
+  max-width: 570px;
+  margin-left: 70px;
+   margin-top: 0;
+}
+
+/* from https://markheath.net/post/font-awesome-circle-background */
+.fas.round-icon {
+  background: $button-primary-color;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 80%;
+  border-radius: 50%;
+  text-align: center;
+  padding: 10px;
 }
 
 .content-row-1,
@@ -106,22 +118,11 @@ header h2 {
   flex-wrap: wrap;
 }
 
-
-/* from https://markheath.net/post/font-awesome-circle-background */
-.fas.round-icon {
-  background: $button-primary-color;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 50px;
-  padding: 10px;
-}
-
 .icon-heading {
   @include main-font (68px, 2.2px, bold);
 }
 
+/*================================== */
 
 
 /*  Locations Section */
@@ -131,19 +132,11 @@ header h2 {
   padding: 100px 0;
 }
 
-.locations-section {
-  // display: flex;
-  // justify-content: center;
-  // flex-direction: column;
-  // flex-wrap: wrap;
-}
-
 .locations-row-1,
 .locations-row-2 {
   display: flex;
   flex: 1;
   justify-content: space-between;
-  // flex-wrap: wrap;
 }
 
 .locations-content-row-2 {
@@ -182,10 +175,10 @@ header h2 {
   right: -90px;
 }
 
-
-
 h3 {
-  @include main-font(6.8rem, 2.2px, 58px, bold)
+  @include main-font(6.8rem, 2.2px, 58px, bold);
+  display: inline;
+  margin-left: 0px;
 }
 
 .primary-btn {
@@ -199,15 +192,8 @@ h3 {
   max-width: 600px;
 }
 
-// .content-left.locations {
-//   position: relative;
-//   top: 200px;
-// }
+/*================================== */
 
-// .content-right.plan-ahead {
-//    position: relative;
-//    top: -200px;
-// }
 
 /* Host A Party Section */
 .host-section {
@@ -233,13 +219,18 @@ h3 {
   color: $secondary-text-color
 }
 
+/*================================== */
+
+
 /* Img Section */
 .img-section img {
   width: 100%;
 }
+
+/*================================== */
+
+
 /* Events Section */
-// TO DO
-// 1. Align content vertically in the middle
 .events-section {
   background-color: $primary-background-color;
   width: 100%;
@@ -256,24 +247,19 @@ h3 {
   flex-wrap: wrap;
 }
 
-.events-image {
+.events-image img {
   box-shadow: -25px 25px 0px -5px $secondary-text-color;
-  // needs to be fixed
-}
-.events-content {
-  // display: flex;
-  // align-items: center;
-  // width: 60%;
 }
 
 .events-content p {
   max-width: 700px;
-
 }
 
 .events-content h3 {
   color: $secondary-text-color
 }
+
+/*================================== */
 
 
 /* Gallery Section */
@@ -298,6 +284,7 @@ h3 {
   margin-right: 25px;
 }
 
+/*================================== */
 
 
 /* Footer */
@@ -307,198 +294,7 @@ footer {
   padding: 15px;
 }
 .juno-footer-link {
-  padding: 0; /* remove padding from the a tag, doesn't work with the desing */
+  padding: 0; /* remove padding from the a tag, doesn't work with the design */
 }
 
-
-
-
-
-
-
-/* styles.css | file:///Users/karmen/juno/projects/bar-one-psd-conversion/styles/styles.css */
-
-h3 {
-  display: inline;
-  margin-left: 0px;
-}
-
-.more-info p {
-  /* max-width: 600px; */
-  max-width: 570px;
-  margin-left: 70px;
-}
-
-.fas.round-icon {
-  /* width: 50px; */
-  /* height: 50px; */
-  /* line-height: 50px; */
-  /* top: 50px; */
-  /* right: 80px; */
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  font-size: 80%;
-}
-
-.wrap {
-  position: relative;
-  left: 100px;
-}
-// .locations-row-1-img img {
-//   position: relative;
-//   left: -100px;
-// }
-
-
-// Hamburger Menu
-
-
-/* MEDIA QUERIES
-=================================== */
-@media (max-width: 1200px) {
-  // Home Page - Locations Section
-
-/* Element | file:///Users/karmen/juno/projects/bar-one-psd-conversion/index.html */
-
-  .locations-row-1,
-  .locations-row-2 {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-    // Align img in the center
-  .locations-row-1-img {
-    left: 0;
-  }
-
-  .locations-row-2-img {
-    right: 0
-  }
-
-  .locations-content-row-1 ,
-  .locations-content-row-2 {
-    margin-left: 0;
-  }
-
-  .locations-content-row-2 {
-    margin-top: 100px;
-    align-items: flex-start;
-    margin-right: 0;
-  }
-
-}
-
-
-@media (max-width: 768px) {
-  // .main-menu {
-  //   justify-content: space-around;
-  //   flex-flow: column wrap;
-  // }
-  // nav ul {
-  //   flex-direction: column;
-  // }
-
-  // Home Page - Header
-  #home .banner-content {
-    height: 70%
-  }
-
-  .box-image {
-    display: none;
-  }
-
-  // Home Page - Events Section
-  .events-image {
-    margin-bottom: 50px;
-  }
-
-  .events-container {
-    padding: 20px;
-  }
-
-
-  // Navigation
-  // Mobile Navigation Idea from - https://codeburst.io/how-to-make-a-collapsible-menu-using-only-css-a1cd805b1390
-
-  .desktop-nav {
-    display: none;
-  }
-
-  .collapsible-menu {
-    display: block!important;
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: 0;
-    background-color: rgba(17,16,16,0.6);
-    padding: 40px;
-    box-shadow: 1px 1px 5px rgba(255,131,39, 0.3);
-  }
-
-
-
-
-  .collapsible-menu label {
-    font-family: 'Tulpen One',"Times New Roman", Times, cursive, sans-serif;
-    font-size: 4.6rem;
-    padding: 20px;
-    cursor: pointer; // make the label act a link
-    background: url(../bar-assets/menu.png) no-repeat left center;
-    padding: 10px 0 10px 60px;
-  }
-
-  // hide the checkbox
-  input#menu {
-    display: none;
-  }
-
-  /* Toggle Effect */
-  input:checked + label {
-    background-image: url(../bar-assets/close.png);
-  }
-
-  // when checkbox in unchecked we want to prevent the menu from collapsing
-  .menu-content {
-    max-height: 0;
-    overflow: hidden;
-  }
-
-  // expand the menu to 100% when the checkbox is checked
-  input:checked ~ .menu-content {
-    max-height: 100%;
-  }
-
-  // .menu-content ul li:hover {
-  //   border-bottom: 1px solid red;
-  //   border-width: 20px;
-  //   transition: all1s ease-in;
-  // }
-
-
-
-  // Home Page - Gallery Section
-
-  .gallery {
-    flex-direction: column;
-  }
-
-  .cell {
-    display: flex;
-    justify-content: space-evenly;
-    align-self: center;
-    margin-right: 0px;
-    margin-top: 25px;
-    width: 70%;
-  }
-
-  .cell:first-of-type {
-    margin-top: 0;
-  }
-}
-
-
-
-
-// Icons made by <a href="https://www.flaticon.com/authors/itim2101" title="itim2101">itim2101
+/*================================== */
