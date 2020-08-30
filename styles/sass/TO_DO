@@ -6,38 +6,39 @@
 5. Check indentation
 6. Improve naming
 7. Add effects ( hover, trsnaform etc)
-8. Remove any classes from the wrapper 
+8. Remove any classes from the wrapper
+9. Add Hover and transition effects
 
 // HOME PAGE
 // Navbar
-// 1. Nav Bar - make hamburger m,enu on all pages for all devices below 768px
+// 1. Nav Bar - make hamburger m,enu on all pages for all devices below 768px - done
 
 /* More Info Section */
 // 1. Need to have the icons within the wrapper rn they are bleeding out
 // 2. Check responsivness
 
-// Locations Section
+// Locations Section - DONE
 1. How to aligned the images &  text content as per design?
 2. Make it responsive
 
-/* Events Section */
+/* Events Section */ - DONE
 // 1. Align content vertically in the middle
 // 2. Check responsivness
 
-// Gallery Section
+// Gallery Section - DONE
 1. Check responsivness
 
-// Img Section
+// Img Section - DONE
 1. Is this responsivness ok?
 
 
-// BLOG PAGE - ok
+// BLOG PAGE - DONE
 
-1. Contact Form - smth is wrong with the form input fields/ bleeding out from the body - how to fix?
-2. Extra padding on blog post content - bleeding  out from the body. Requires extra padding to follow the design
-3. Sidebar section - how to postion the layout. Trouble figuring out the image?
-4. Responsivness for both sections
+1. Contact Form - smth is wrong with the form input fields/ bleeding out from the body - how to fix? - DONE
+2. Extra padding on blog post content - bleeding  out from the body. Requires extra padding to follow the design - DONE
+3. Sidebar section - how to postion the layout. Trouble figuring out the image? - DONE
+4. Responsivness for both sections - DONE
 
 
 // CONTACT PAGE
-1.  Form Input fields - same issues
+1.  Form Input fields - same issues - DONE

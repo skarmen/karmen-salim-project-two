@@ -1,0 +1,155 @@
+
+// First Breakpoint
+@media (max-width: 1200px) {
+  /* Contact Page */
+  .contact-section {
+    height: 1050px;
+  }
+
+  .contact-row {
+    flex-direction: column;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    flex-wrap: wrap;
+  }
+
+  .contact-page-form {
+    margin-top: 100px;
+    position: static;
+  }
+  /* =============== */
+}
+
+
+
+
+// Second Breakpoint
+@media (max-width: 1024px) {
+  /* Blog Page */
+  .blog-page-main-section {
+    flex-direction: column;
+  }
+
+  // select wrapper div (sidebar-content)
+  .blog-sidebar div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+  }
+
+  .sidebar-img {
+    display: none; // design decision on mobile
+  }
+
+  .sidebar-content {
+    right: 0; // to center the div
+    top: 0; // remove img spacer height
+  }
+
+  .image-spacer {
+    display: none;
+  }
+
+  .blog-content-spacer {
+    height: 250px; // to offest the top property on the blog-post-img
+  }
+
+  .blog-sidebar {
+    padding-bottom: 100px;
+  }
+  /* ================== */
+}
+
+
+
+
+// Tablets
+@media (max-width: 768px) {
+   /* Blog Page */
+  .blog-content {
+    padding: 40px;
+  }
+
+  .blog-page-heading {
+    left: 40px;
+  }
+  /* ================== */
+}
+
+
+// Mobile Devices
+@media (max-width: 480px) {
+  /* Contact Page */
+  form.contact-page {
+    box-shadow: 15px 15px 0px -5px #ff8327;
+  }
+
+  .contact-icons a {
+    padding: 15px;
+  }
+  /* ================== */
+
+
+  /* Home Page */
+  #home .banner-content {
+    height: 50%
+  }
+  #home .banner-content h1 {
+    font-size: 16rem;
+  }
+
+  #home .banner-content h2 {
+    font-size: 8rem;
+    left: 0;
+  }
+
+  /* Home Page - Host Section */
+  .host-content {
+    text-align: center;
+  }
+
+  /* Home Page - Locations Section */
+  .locations-content-row-1,
+  .locations-content-row-2,
+  .host-content,
+  .events-container {
+    padding: 0 20px;
+  }
+  /* ================== */
+
+
+  /* Blog Page */
+  .sidebar-content, .blog-content {
+    padding: 25px;
+  }
+
+  .blog-post-img {
+    top: -200px; // to offset the g ap between the borders
+  }
+
+  .blog-content-spacer {
+    height: 200px; // to offset the new value for the top property on blog-post-img
+  }
+
+  .comments-img-1, .comments-img-2 {
+    margin-right: 20px;
+  }
+
+  input[type="email"], input[type="text"] {
+    padding-left: 0px;
+  }
+  /* ================== */
+}
+
+
+// The smallest screen size for the project
+@media (max-width: 350px) {
+  /* Contact Form */
+   input[type="email"] {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

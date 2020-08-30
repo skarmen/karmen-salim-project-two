@@ -558,11 +558,10 @@ Footer Color - not provided on the style guide
 Suggested color: #2b2727
 */
 
-// TO DO
-// 1. Add Fallback fonts - DONE
-// 2. Convert all font-size to rems
 
-// COLOR VARIABLES
+
+/* COLOR VARIABLES
+========================== */
 $primary-text-color: #fff;
 $secondary-text-color: #ff8327;
 
@@ -573,17 +572,20 @@ $footer-background-color: #2b2727;
 
 $button-primary-color: #bf2603;
 
+/* ========================== */
+
 /* MIXINS
 ========================== */
 @mixin main-font(
   $font-size,
-  // $line-height,
   $letter-spacing,
+  $line-height: 30px,
   $font-weight: 400,
 ) {
   font-family: "Chathura", "Times New Roman", Times, sans-serif;
   font-size: $font-size;
   letter-spacing: $letter-spacing;
+  line-height: $line-height;
   font-weight: $font-weight;
 }
 
@@ -597,9 +599,13 @@ html {
 }
 
 body {
-  @include main-font(39px, 1.9px); // convert pixels to rem
+  @include main-font(3.9rem, 1.9px);
   color: $primary-text-color;
-;
+}
+
+nav ul a {
+  @include main-font(3.9rem, 1.9px, 29px, bold)
+
 }
 
 ul {
@@ -620,15 +626,17 @@ a {
   max-width: 1280px;
   margin: 0 auto;
 }
-/* ========================== */
 
 header .wrapper {
   height: 100%;
 }
+/* ========================== */
 
-/* IMPORTS */
-// @use should be used instead @import, official note from SASS's website
+
+/* IMPORTS
+========================== */
 @import "home-page";
 @import "contact-page";
 @import "blog-page";
+@import "media-queries.scss";
 /* ========================== */

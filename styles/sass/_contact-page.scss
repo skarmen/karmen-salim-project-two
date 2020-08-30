@@ -139,42 +139,8 @@ div.contact-input:nth-child(2) {
   border: none;
   width: 100%;
   font-family: 'Tulpen One',"Times New Roman", Times, cursive, sans-serif;;
-  font-size: 39px; // convert pixels to rem
+  font-size: 3.9rem; // convert pixels to rem
   letter-spacing: 1.9px;
   padding: 5px 0px;
 }
 
-
-@media (max-width: 1200px) {
-
-  .contact-section {
-    height: 1050px;
-  }
-
-  .contact-row {
-    flex-direction: column;
-  }
-
-  .contact-info {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    flex-wrap: wrap;
-  }
-
-  .contact-page-form {
-    margin-top: 100px;
-    position: static;
-  }
-}
-
-@media (max-width: 480px) {
-  form.contact-page {
-    box-shadow: 15px 15px 0px -5px #ff8327;
-  }
-
-  .contact-icons a {
-    padding: 15px;
-  }
-
-}

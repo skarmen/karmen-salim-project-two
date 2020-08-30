@@ -638,6 +638,9 @@ rgb(34,3,3)
 Footer Color - not provided on the style guide
 Suggested color: #2b2727
 */
+/* COLOR VARIABLES
+========================== */
+/* ========================== */
 /* MIXINS
 ========================== */
 /* ========================== */
@@ -649,10 +652,19 @@ html {
 
 body {
   font-family: "Chathura", "Times New Roman", Times, sans-serif;
-  font-size: 39px;
+  font-size: 3.9rem;
   letter-spacing: 1.9px;
+  line-height: 30px;
   font-weight: 400;
   color: #fff;
+}
+
+nav ul a {
+  font-family: "Chathura", "Times New Roman", Times, sans-serif;
+  font-size: 3.9rem;
+  letter-spacing: 1.9px;
+  line-height: 29px;
+  font-weight: bold;
 }
 
 ul {
@@ -674,12 +686,13 @@ a {
   margin: 0 auto;
 }
 
-/* ========================== */
 header .wrapper {
   height: 100%;
 }
 
-/* IMPORTS */
+/* ========================== */
+/* IMPORTS
+========================== */
 /*  Header */
 .banner-content {
   display: -webkit-box;
@@ -724,7 +737,7 @@ header {
 
 .top-nav-logo {
   font-family: 'Tulpen One',"Times New Roman", Times, cursive, sans-serif;
-  font-size: 46px;
+  font-size: 4.6rem;
   margin: 20px;
 }
 
@@ -750,7 +763,7 @@ header {
 
 h1 {
   font-family: 'Tulpen One',"Times New Roman", Times, cursive, sans-serif;
-  font-size: 261.4px;
+  font-size: 26.14rem;
   text-align: center;
   letter-spacing: 2.4px;
   color: #ff8327;
@@ -763,7 +776,8 @@ header h2 {
   font-family: "Chathura", "Times New Roman", Times, sans-serif;
   font-size: 83.2px;
   letter-spacing: 2.6px;
-  font-weight: bold;
+  line-height: bold;
+  font-weight: 400;
   line-height: 94.7px;
 }
 
@@ -830,7 +844,8 @@ header h2 {
   font-family: "Chathura", "Times New Roman", Times, sans-serif;
   font-size: 68px;
   letter-spacing: 2.2px;
-  font-weight: bold;
+  line-height: bold;
+  font-weight: 400;
 }
 
 /*  Locations Section */
@@ -911,15 +926,17 @@ header h2 {
 
 h3 {
   font-family: "Chathura", "Times New Roman", Times, sans-serif;
-  font-size: 68px;
+  font-size: 6.8rem;
   letter-spacing: 2.2px;
+  line-height: 58px;
   font-weight: bold;
 }
 
-.read-more-btn {
+.primary-btn {
+  font-family: 'Tulpen One',"Times New Roman", Times, cursive, sans-serif;
   text-align: center;
   background-color: #bf2603;
-  padding: 0 25px;
+  padding: 10px 25px;
 }
 
 .locations-section p {
@@ -1127,6 +1144,7 @@ h3 {
     position: absolute;
     width: 100%;
     left: 0;
+    top: 0;
     background-color: rgba(17, 16, 16, 0.6);
     padding: 40px;
     -webkit-box-shadow: 1px 1px 5px rgba(255, 131, 39, 0.3);
@@ -1134,7 +1152,7 @@ h3 {
   }
   .collapsible-menu label {
     font-family: 'Tulpen One',"Times New Roman", Times, cursive, sans-serif;
-    font-size: 46px;
+    font-size: 4.6rem;
     padding: 20px;
     cursor: pointer;
     background: url(../bar-assets/menu.png) no-repeat left center;
@@ -1175,31 +1193,6 @@ h3 {
   }
   .cell:first-of-type {
     margin-top: 0;
-  }
-}
-
-@media (max-width: 480px) {
-  #home .banner-content {
-    height: 50%;
-  }
-  #home .banner-content h1 {
-    font-size: 16rem;
-  }
-  #home .banner-content h2 {
-    font-size: 8rem;
-    left: 0;
-  }
-  .host-content {
-    text-align: center;
-  }
-}
-
-@media (max-width: 480px) {
-  .locations-content-row-1,
-  .locations-content-row-2,
-  .host-content,
-  .events-container {
-    padding: 0 20px;
   }
 }
 
@@ -1341,6 +1334,7 @@ input, textarea {
   font-family: "Chathura", "Times New Roman", Times, sans-serif;
   font-size: 39px;
   letter-spacing: 1.9px;
+  line-height: 30px;
   font-weight: 400;
 }
 
@@ -1385,48 +1379,9 @@ div.contact-input:nth-child(2) {
   border: none;
   width: 100%;
   font-family: 'Tulpen One',"Times New Roman", Times, cursive, sans-serif;
-  font-size: 39px;
+  font-size: 3.9rem;
   letter-spacing: 1.9px;
   padding: 5px 0px;
-}
-
-@media (max-width: 1200px) {
-  .contact-section {
-    height: 1050px;
-  }
-  .contact-row {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .contact-info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-item-align: center;
-        align-self: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .contact-page-form {
-    margin-top: 100px;
-    position: static;
-  }
-}
-
-@media (max-width: 480px) {
-  form.contact-page {
-    -webkit-box-shadow: 15px 15px 0px -5px #ff8327;
-            box-shadow: 15px 15px 0px -5px #ff8327;
-  }
-  .contact-icons a {
-    padding: 15px;
-  }
 }
 
 /* Blog Page - Header */
@@ -1655,6 +1610,7 @@ input, textarea {
   font-family: "Chathura", "Times New Roman", Times, sans-serif;
   font-size: 39px;
   letter-spacing: 1.9px;
+  line-height: 30px;
   font-weight: 400;
 }
 
@@ -1722,11 +1678,39 @@ div.blog-input:nth-child(2) {
   padding: 5px 0px;
 }
 
-/* MEDIA QUERIES
-==========================================  */
-@media only screen and (max-width: 1024px) {
-  /* BLOG PAGE
-  ========================================== */
+@media (max-width: 1200px) {
+  /* Contact Page */
+  .contact-section {
+    height: 1050px;
+  }
+  .contact-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .contact-page-form {
+    margin-top: 100px;
+    position: static;
+  }
+  /* =============== */
+}
+
+@media (max-width: 1024px) {
+  /* Blog Page */
   .blog-page-main-section {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1757,19 +1741,54 @@ div.blog-input:nth-child(2) {
   .blog-sidebar {
     padding-bottom: 100px;
   }
-  /* ========================================== */
+  /* ================== */
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
+  /* Blog Page */
   .blog-content {
     padding: 40px;
   }
   .blog-page-heading {
     left: 40px;
   }
+  /* ================== */
 }
 
-@media only screen and (max-width: 480px) {
+@media (max-width: 480px) {
+  /* Contact Page */
+  form.contact-page {
+    -webkit-box-shadow: 15px 15px 0px -5px #ff8327;
+            box-shadow: 15px 15px 0px -5px #ff8327;
+  }
+  .contact-icons a {
+    padding: 15px;
+  }
+  /* ================== */
+  /* Home Page */
+  #home .banner-content {
+    height: 50%;
+  }
+  #home .banner-content h1 {
+    font-size: 16rem;
+  }
+  #home .banner-content h2 {
+    font-size: 8rem;
+    left: 0;
+  }
+  /* Home Page - Host Section */
+  .host-content {
+    text-align: center;
+  }
+  /* Home Page - Locations Section */
+  .locations-content-row-1,
+  .locations-content-row-2,
+  .host-content,
+  .events-container {
+    padding: 0 20px;
+  }
+  /* ================== */
+  /* Blog Page */
   .sidebar-content, .blog-content {
     padding: 25px;
   }
@@ -1785,9 +1804,11 @@ div.blog-input:nth-child(2) {
   input[type="email"], input[type="text"] {
     padding-left: 0px;
   }
+  /* ================== */
 }
 
-@media only screen and (max-width: 350px) {
+@media (max-width: 350px) {
+  /* Contact Form */
   input[type="email"] {
     overflow: hidden;
     text-overflow: ellipsis;
