@@ -217,6 +217,12 @@ h3 {
   padding: 10px 25px;
 }
 
+.primary-btn:hover,
+.primary-btn:focus {
+  background-color: rgba(255, 131, 39, 0.8);
+  transition: all 0.3s ease-in 0s;
+}
+
 .locations-section p {
   max-width: 600px;
 }

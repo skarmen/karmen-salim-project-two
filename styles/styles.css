@@ -977,6 +977,13 @@ h3 {
   padding: 10px 25px;
 }
 
+.primary-btn:hover,
+.primary-btn:focus {
+  background-color: rgba(255, 131, 39, 0.8);
+  -webkit-transition: all 0.3s ease-in 0s;
+  transition: all 0.3s ease-in 0s;
+}
+
 .locations-section p {
   max-width: 600px;
 }
@@ -1725,6 +1732,8 @@ div.blog-input:nth-child(2) {
   .menu-content {
     max-height: 0;
     overflow: hidden;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
   }
   input:checked ~ .menu-content {
     max-height: 100%;

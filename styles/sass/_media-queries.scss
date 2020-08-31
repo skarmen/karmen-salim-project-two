@@ -175,23 +175,27 @@
   .menu-content {
     max-height: 0;
     overflow: hidden;
+    transition: all 0.4s ease-in-out 0s;
   }
 
   // expand the menu to 100% when the checkbox is checked
   input:checked ~ .menu-content {
     max-height: 100%;
     padding: 15px 0; // need this for border-bottom hover effect on last
+
   }
 
   .mobile-menu li {
     padding: 10px 0;
   }
 
+  // idea from https://tobiasahlin.com/blog/css-trick-animating-link-underlines/
   .mobile-menu li a {
     padding: 5px !important;
     // required for the hover effect
     position: relative;
   }
+
 
   .mobile-menu li a::after {
     content: "";
