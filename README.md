@@ -4,4 +4,4 @@ The goal of this project was to convert a provided PSD design into a functional,
 The website was built using only HTML & CSS. The layout of the web pages was built with Flexbox.  
 
 ## Live Demo 
-[See live demo of the design](https://skarmen.github.io/karmen-salim-project-two/contact.html)
+[See live demo of the design](skarmen.github.io/multi-page-psd-conversion/)
